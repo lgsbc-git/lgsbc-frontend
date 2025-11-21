@@ -2,7 +2,7 @@
    MAIN FOOTER WRAPPER — WITH BACKGROUND IMAGE
 ===================================================== */
 .footer-new {
-  background-image: url("../assets/footer_bg.webp"); /* <-- your image path */
+  background-image: url("../assets/footer_bg.png"); /* <-- your image path */
   background-size: cover;
   /* background-position: center; */
   background-repeat: no-repeat;

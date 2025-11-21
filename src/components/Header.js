@@ -3,10 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import "../styles/Header.css";
 
 // Logos
-import homeLogo from "../assets/primary/lgstech-whitelogo.svg";
+import homeLogo from "../assets/primary/lgstechlogo-withoutbg-bw.png";
 
 
-import lightLogo from "../assets/LGS Tech Logo Gradient.svg";
+import lightLogo from "../assets/primary/lgstechlogo-withoutbg-gradientcolor.png";
 
 function Header() {
   const [isShrunk, setIsShrunk] = useState(false);
