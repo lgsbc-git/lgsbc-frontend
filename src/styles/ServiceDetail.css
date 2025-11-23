@@ -1,0 +1,188 @@
+/* src/styles/ServiceDetail.css */
+
+/* ===============================
+   PAGE WRAPPER
+================================ */
+.service-detail-container {
+  width: 100%;
+  background: #f4f7fb;
+  padding-bottom: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+/* ===============================
+   PAGE TITLE (TOP CENTER)
+================================ */
+.service-detail-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 130px 0 40px;
+  color: #002b5c;
+}
+
+/* ===============================
+   CONTENT LAYOUT (SIDEBAR + MAIN)
+================================ */
+.service-detail-content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 100px;
+}
+
+/* ===============================
+   MAIN CONTENT AREA
+================================ */
+.service-detail-main {
+  width: 900px;
+}
+
+/* HERO IMAGE */
+.service-hero-img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  object-fit: cover;
+  height: 340px;
+}
+
+/* MAIN HEADING UNDER IMAGE */
+.service-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #002b5c;
+  margin-bottom: 15px;
+}
+
+/* ===============================
+   CONTENT SECTIONS
+================================ */
+.service-section {
+  margin-bottom: 35px;
+}
+
+.service-section h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #002b5c;
+  margin-bottom: 12px;
+}
+
+.service-section p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+}
+
+.service-section ul {
+  padding-left: 20px;
+}
+
+.service-section li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-family: "Montserrat";
+}
+
+/* ===============================
+   RESPONSIVE FIXES
+================================ */
+@media (max-width: 1100px) {
+  .service-detail-content-wrapper {
+    flex-direction: column;
+    padding: 0 40px;
+  }
+
+  .service-sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .service-detail-main {
+    width: 100%;
+  }
+
+  .service-hero-img {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-detail-title {
+    font-size: 2rem;
+  }
+}
+/* ===============================
+   MODERN + GLASS SIDEBAR (Option 1 + 5)
+================================ */
+.service-sidebar {
+  width: 280px;
+  padding: 25px;
+  border-radius: 18px;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* Gradient border */
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background-clip: padding-box;
+
+  /* Soft shadow */
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+
+  position: sticky;
+  top: 120px;
+}
+
+.service-sidebar h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #002b5c;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* LIST ITEMS */
+.service-sidebar p {
+  padding: 12px 16px;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+  font-size: 0.97rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  color: #0b2347;
+  backdrop-filter: blur(2px);
+      background-color: #a8a8b336;
+}
+
+/* HOVER EFFECT (modern + subtle) */
+.service-sidebar p:hover {
+  background: #46474993;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transform: translateX(4px);
+  color: white;
+}
+
+/* ACTIVE SERVICE */
+.active-service {
+  background: linear-gradient(135deg, #00255d, #00255d);
+  color: #fff !important;
+
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(105, 107, 108, 0.501);
+
+  transform: translateX(4px);
+}

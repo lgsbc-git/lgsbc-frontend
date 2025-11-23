@@ -30,6 +30,7 @@ import "./styles/App.css";
 // import StoryPage from "./pages/stories/StoryPage";
 // import Blogs from "./pages/Blogs";
 import ScrollToTop from "./components/ScrollToTop";
+import ServicePageDynamic from "./pages/ServicePageDynamic";
 // import HelpCenter from "./pages/HelpCenter";
 // import Terms from "./pages/Terms";
 // import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -69,6 +70,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<ServicePageDynamic />} />
           {/* 
           <Preloader logoSrc={logo} pieceSize={80} />
           <Route path="/product" element={<Product />} />
