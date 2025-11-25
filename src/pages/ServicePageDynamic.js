@@ -31,7 +31,7 @@ const ServicePageDynamic = () => {
                     style={{
                       backgroundImage: `linear-gradient(
           rgba(0, 0, 0, 0.6),
-          rgba(9, 30, 83, 0.7)
+          rgba(37, 38, 41, 0.7)
         ), url(${data.heroImage})`
                     }}
                   >
