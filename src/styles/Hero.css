@@ -197,3 +197,20 @@
     font-size: 1.7rem;
   }
 }
+/* Smooth Zoom-in Animation */
+
+.hero-section {
+  background-size: 115%;      /* start zoomed-in */
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: bgZoomOut 18s ease-out forwards;
+}
+@keyframes bgZoomOut {
+  0% {
+    background-size: 115%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}

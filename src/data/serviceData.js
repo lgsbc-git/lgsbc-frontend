@@ -1,6 +1,9 @@
 import erpVendorHero from "../assets/services/7076235.jpg";
 import erpProductHero from "../assets/services/3d-graph-computer-illustration.jpg";
 import d365ReadinessHero from "../assets/services/employee-working-marketing-setting.jpg";
+import d365ConsultingHero from "../assets/services/cheerful-executives-working-together.jpg";
+import d365DevelopmentHero from "../assets/services/7060468.jpg";
+import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
 
 export const serviceData = {
   "erp-vendor-evaluation": {
@@ -412,5 +415,434 @@ export const serviceData = {
       }
     ]
   },
+  "dynamics365-consulting": {
+  title: "Microsoft Dynamics 365 Consulting Services",
+  sidebarActive: "Microsoft Dynamics 365 Consulting Services",
+
+  heroImage: d365ConsultingHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO SECTION
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Unlock the Full Value of Dynamics 365",
+      subheading:
+        "Maximize ROI and accelerate transformation with scalable, secure, and tailored Dynamics consulting across your entire business ecosystem.",
+      button: "Talk to our experts",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // WHY ORGANIZATIONS CHOOSE D365 CONSULTING
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Organizations Choose Dynamics 365 Consulting"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Dynamics 365 is powerful, but getting real value from it takes more than configuration—it requires alignment across people, processes, technology, and long-term strategy. We help you increase ROI, improve decision-making, reduce operational and licensing costs, and boost both productivity and customer experiences. Our experts bring the clarity, optimization, and innovation needed to scale integrations, streamline operations, and build a future-ready transformation roadmap. With the right guidance, Dynamics 365 becomes an engine for growth—not a technical hurdle."
+    },
+
+    // -------------------------------------------------
+    // D365 MODULE CONSULTING SERVICES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Enterprise-Grade Dynamics 365 Consulting Services"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Dynamics 365 Finance & Supply Chain – Optimize financial operations, strengthen controls, automate workflows, and gain real-time supply chain visibility.",
+        "Dynamics 365 Commerce, Sales & Customer Service – Improve sales performance and unify customer experiences across channels.",
+        "Project Management & Accounting – Enhance cost tracking, resource visibility, and project profitability.",
+        "Field Service – Strengthen field operations with scheduling optimization, asset insights, and connected mobile experiences.",
+        "Integration & Security – Ensure secure, scalable integrations with enterprise-grade architecture.",
+        "Environment Strategy & Solution Architecture – Design ALM structures, environments, and scalable architecture aligned with growth."
+      ]
+    },
+
+    // -------------------------------------------------
+    // HOW WE UNLOCK BUSINESS VALUE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "How We Unlock Value Across Your Dynamics Landscape"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Workflows Built for Real Teams – Refined workflows that reduce friction and improve operational flow.",
+        "Practical Expertise Delivered with Precision – Technical depth combined with business understanding.",
+        "Customer-Focused Business Outcomes – Aligning Dynamics with customer journeys to improve satisfaction and service performance.",
+        "Ongoing Optimization & Innovation – Continuous enhancements to keep your business ahead."
+      ]
+    },
+
+    // -------------------------------------------------
+    // BUSINESS CHALLENGES WE SOLVE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Business Challenges We Help You Solve"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Increase ROI on D365 investments",
+        "Make faster, data-driven decisions",
+        "Optimize operational and licensing costs",
+        "Build a scalable, growth-driven technology strategy",
+        "Boost productivity across business functions",
+        "Implement innovations and integrations seamlessly",
+        "Modernize outdated processes",
+        "Improve customer and employee experiences"
+      ]
+    },
+
+    // -------------------------------------------------
+    // CONSULTING APPROACH
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Our Proven Consulting Approach"
+    },
+    {
+      type: "steps",
+      steps: [
+        "Discovery & Gap Analysis – Understand workflows, challenges, and opportunities.",
+        "Solution Architecture & Strategy – Build a scalable, secure, future-ready D365 blueprint.",
+        "Process Optimization & Setup Refinement – Align modules for maximum efficiency.",
+        "Integration, Security & Governance – Strengthen performance and continuity.",
+        "Enablement & Adoption Support – Equip teams for successful adoption.",
+        "Continuous Improvement & Optimization – Evolve with new features, analytics, and innovation."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY CLIENTS PARTNER WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Leading Organizations Partner With Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Deep Expertise Across All Dynamics 365 Modules",
+        "Business-First, Technology-Enabled Approach",
+        "Hands-On Consulting, Not Just Advisory",
+        "Scalable Architecture & Security Best Practices",
+        "Proven Methodology for ROI and Optimization",
+        "Long-Term Partnerships Focused on Growth",
+        "Vendor-neutral, outcome-focused delivery"
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT MESSAGE
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Unlock efficiency, scalability, and long-term value with consulting designed for modern enterprises. Let’s build a Dynamics 365 ecosystem that powers your next stage of growth."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Start Maximizing Your Dynamics 365 Investment",
+      button: "Request a Consultation",
+      link: "/contact"
+    }
+  ]
+},
+"dynamics365-development": {
+  title: "Microsoft Dynamics 365 Development Services",
+  sidebarActive: "Microsoft Dynamics 365 Development Services",
+
+  heroImage: d365DevelopmentHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Custom Dynamics 365 Engineering for Modern Enterprises",
+      subheading:
+        "Extend, optimize, and scale your platform with development solutions that deliver performance, innovation, and long-term value.",
+      button: "Talk to us today",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // WHY CUSTOM ENGINEERING MATTERS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Custom Engineering Makes Dynamics 365 Work Harder"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Out-of-the-box Dynamics 365 is strong, but growing enterprises often need deeper customization, smarter automation, seamless integrations, and more control than standard modules allow. Our development services expand your platform with tailored features, refined workflows, and connected systems that improve efficiency and user experience. By aligning Dynamics with how your business truly operates, we help you unlock capabilities that drive ROI, reduce manual work, and create a platform that scales effortlessly with your growth."
+    },
+
+    // -------------------------------------------------
+    // DEVELOPMENT SERVICES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Tailored Development That Delivers Real Dynamics 365 ROI"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Product Extension Requirements – Define functional and technical requirements that deliver real business impact.",
+        "Product Extension Design – Scalable, future-ready extensions aligned with Microsoft best practices.",
+        "Custom Development – Build custom modules, plugins, workflows, integrations, and UI enhancements.",
+        "Azure DevOps Build Automation – Automated builds, testing, and deployments using DevOps pipelines."
+      ]
+    },
+
+    // -------------------------------------------------
+    // VALUE DELIVERY
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Delivering Custom Development That Powers Growth and Value"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Solution Design That Scales – Built with Microsoft-aligned architecture for long-term maintainability.",
+        "Built for Your Business, Not Just Today – Future-ready development supporting enterprise growth.",
+        "Engineering Excellence Through Azure DevOps – Best-practice CI/CD pipelines for stable deployments.",
+        "A Partnership Focused on Reliability and ROI – Solutions designed to reduce manual effort and improve performance."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHEN DO YOU NEED CUSTOM DEVELOPMENT?
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "When Your Business Demands More from Dynamics 365"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Build advanced automation or integrations",
+        "Replace manual or complex processes with system logic",
+        "Extend modules like Finance, SCM, CX, or Field Service",
+        "Modernize workflows or create new product capabilities",
+        "Add custom UI elements, entities, or business rules",
+        "Accelerate releases with DevOps-driven pipelines"
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY CLIENTS WORK WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Leading Organizations Work With Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Certified Dynamics 365 developers and solution architects",
+        "Expertise across Finance, SCM, Sales, Service, Commerce & Project Operations",
+        "Microsoft-aligned development standards and best practices",
+        "Architecture governance that prevents over-customization",
+        "Azure DevOps CI/CD frameworks for reliable, repeatable delivery",
+        "Transparent timelines, documentation, and code quality processes",
+        "We build solutions that last — without technical debt"
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT MESSAGE
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Transform Dynamics 365 into a truly customized, high-performance system. Whether you need new features, automation, or full-scale extensions, our development team is ready to help."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Start Enhancing Your Dynamics 365 Platform Today",
+      button: "Connect with our experts",
+      link: "/contact"
+    }
+  ]
+},
+"dynamics365-implementation": {
+  title: "Microsoft Dynamics 365 Implementation Services",
+  sidebarActive: "Microsoft Dynamics 365 Implementation Services",
+
+  heroImage: d365ImplementationHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO BLOCK
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Future-Proof Your Business with Microsoft Dynamics 365",
+      subheading:
+        "Accelerate digital transformation, maximize ROI, and unlock enterprise-wide efficiency with tailored Dynamics 365 implementation.",
+      button: "Schedule a consultation",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // TRANSFORMATION VALUE
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Transform Technology into Strategic Advantage"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Implementing Dynamics 365 isn’t just deploying software—it’s redefining how your enterprise operates. When executed strategically, Dynamics 365 aligns technology, processes, and people to create a connected, intelligent enterprise. Leaders gain faster, data-driven decision-making, enhanced operational efficiency, and superior customer experiences. With careful planning and expert execution, Dynamics 365 becomes a scalable, secure, and future-ready platform, empowering growth, innovation, and competitive advantage."
+    },
+
+    // -------------------------------------------------
+    // SUCCESS-BY-DESIGN FRAMEWORK
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Our Proven Implementation Blueprint: Success by Design"
+    },
+    {
+      type: "steps",
+      steps: [
+        "Strategize – Define objectives, align with enterprise growth, and build a transformation roadmap.",
+        "Initiate – Establish governance, project management, and stakeholder alignment.",
+        "Implement – Configure modules, integrate systems, and validate performance with thorough testing.",
+        "Prepare – Train teams, drive adoption, and embed change management processes.",
+        "Operate – Transition to stable operations with continuous improvement and measurable outcomes."
+      ]
+    },
+
+    // -------------------------------------------------
+    // EXECUTIVE CONSIDERATIONS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Executive Considerations for Impactful Implementation"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Strategic Alignment: Ensure solution supports enterprise goals and long-term growth.",
+        "ROI and Business Value: Focus on measurable outcomes like efficiency and revenue impact.",
+        "Change Management & Adoption: Drive user engagement for successful rollout.",
+        "Data Governance & Quality: Clean, reliable data enables smarter decisions.",
+        "Process Optimization: Reimagine and streamline workflows.",
+        "Scalability & Flexibility: Build a solution ready for growth and future technology.",
+        "Security & Compliance: Protect data and meet regulatory standards.",
+        "Partner Expertise: Reduce risk with experienced implementation specialists.",
+        "Integration Ecosystem: Connect D365 with ERP, CRM, BI and productivity tools.",
+        "Continuous Improvement: View implementation as a foundation for innovation."
+      ]
+    },
+
+    // -------------------------------------------------
+    // HOW VALUE IS DELIVERED
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "How We Deliver Measurable Value"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Business-First Implementation tailored to your operational and strategic needs.",
+        "Seamless Integration across ERP, CRM, analytics, and third-party platforms.",
+        "Adoption & Change Excellence ensuring high engagement and minimal disruption.",
+        "Continuous Optimization for evolving processes, new features, and emerging needs.",
+        "C-Suite Insights through executive dashboards and strategic recommendations.",
+        "Proven, Risk-Aware Methodology based on Microsoft’s Success by Design framework."
+      ]
+    },
+
+    // -------------------------------------------------
+    // IMPLEMENTATION CAPABILITIES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Comprehensive Dynamics 365 Implementation Services"
+    },
+    {
+      type: "bullets",
+      items: [
+        "End-to-End Project Management from initiation to go-live support.",
+        "Project Initiation & PMO Setup with governance and risk management.",
+        "Product Configuration & Deployment aligned to your workflows.",
+        "Power Platform & ISV Integration for extended capabilities.",
+        "Testing, Training & Change Management ensuring readiness and adoption."
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY CHOOSE US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Leading Enterprises Partner With Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Deep expertise across Finance, Supply Chain, Sales, Customer Service & Commerce.",
+        "Hands-on consulting that blends strategy, execution, and adoption support.",
+        "ROI-focused implementations with measurable operational impact.",
+        "Scalable architecture, security best practices, and future-ready deployments.",
+        "Long-term partnerships centered around continuous optimization and innovation."
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Turn Dynamics 365 into a strategic growth engine. Build a system that strengthens insights, improves efficiency, and powers your next wave of enterprise transformation."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Empower Your Enterprise with Dynamics 365",
+      button: "Talk to us today",
+      link: "/contact"
+    }
+  ]
+},
+
+
   // Your other services stay untouched
 };
