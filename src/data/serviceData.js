@@ -4,8 +4,8 @@ import d365ReadinessHero from "../assets/services/employee-working-marketing-set
 import d365ConsultingHero from "../assets/services/cheerful-executives-working-together.jpg";
 import d365DevelopmentHero from "../assets/services/7060468.jpg";
 import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
-import d365ProgramPMHero from "../assets/services/business-people-working-green-office.jpg";
-import powerPlatformHero from "../assets/services/business-people-working-green-office.jpg";
+import d365ProgramPMHero from "../assets/services/modern-equipped-computer-lab.jpg";
+import powerPlatformHero from "../assets/services/power_apps.jpg";
 
 export const serviceData = {
   "erp-vendor-evaluation": {
