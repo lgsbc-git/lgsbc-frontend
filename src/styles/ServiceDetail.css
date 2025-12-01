@@ -391,6 +391,14 @@
   box-shadow: 0 8px 20px rgba(105, 107, 108, 0.5);
   transform: translateX(4px);
 }
+.service-sidebar {
+
+
+  /* ⭐ ADD THESE LINES */
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+}
+
 
 /* -----------------------------------------------------
    RESPONSIVE
@@ -505,4 +513,188 @@
   font-size: 0.95rem;
   line-height: 1.45;
   color: #333;
+}
+/* -------------------------------------------
+   ADVANCED TILES (title + description + bullets + footer)
+------------------------------------------- */
+.tiles-grid-bullet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.tile-card-bullet {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.tile-card-bullet:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* -------------------------------------------
+   TILE TITLES
+------------------------------------------- */
+.tile-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #002b5c;
+}
+
+/* -------------------------------------------
+   DESCRIPTION PARAGRAPH
+------------------------------------------- */
+.tile-description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.55;
+  margin-bottom: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------------------------------
+   BULLET LIST
+------------------------------------------- */
+.tile-bullets {
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.tile-bullets li {
+  margin-bottom: 8px;
+  font-size: 0.97rem;
+  color: #1e1e1e;
+  line-height: 1.5;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tile-bullets li::before {
+  content: "o";
+  color: #3fa517;
+  font-size: 1.1rem;
+  position: absolute;
+  left: -18px;
+  top: -3px;
+}
+
+/* -------------------------------------------
+   FOOTER PARAGRAPH
+------------------------------------------- */
+.tile-footer {
+  margin-top: 12px;
+  font-size: 0.97rem;
+  line-height: 1.5;
+  color: #333;
+  opacity: 0.9;
+  font-family: "Montserrat", sans-serif;
+}
+/* ------------------------------- */
+/* COMPARISON TABLE STYLING        */
+/* ------------------------------- */
+
+.comparison-table-container {
+  margin: 40px 0;
+}
+
+.comparison-table-container .block-section-title {
+  margin-bottom: 20px;
+}
+
+/* TABLE BOX */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* TABLE HEADER */
+.comparison-table thead {
+  background: #00255d;
+}
+
+.comparison-table thead th {
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* TABLE BODY */
+.comparison-table tbody tr {
+  transition: background 0.2s ease-in-out;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #f7f9fc;
+}
+
+.comparison-table tbody tr:hover {
+  background: #eaf0fa;
+}
+
+.comparison-table td {
+  padding: 16px 20px;
+  font-size: 15px;
+  color: #333;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+/* REMOVE LAST BORDER */
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-table,
+  .comparison-table tbody,
+  .comparison-table tr,
+  .comparison-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-table tr {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+
+  .comparison-table td {
+    border-bottom: none;
+    padding: 10px 0;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .comparison-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    font-weight: 600;
+    color: #00255d;
+  }
 }

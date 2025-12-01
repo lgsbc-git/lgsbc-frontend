@@ -4,10 +4,16 @@ import d365ReadinessHero from "../assets/services/employee-working-marketing-set
 import d365ConsultingHero from "../assets/services/cheerful-executives-working-together.jpg";
 import d365DevelopmentHero from "../assets/services/7060468.jpg";
 import d365ImplementationHero from "../assets/services/business-people-working-green-office.jpg";
+import d365SupportHero from "../assets/services/business-people-working-green-office.jpg";
 import d365ProgramPMHero from "../assets/services/modern-equipped-computer-lab.jpg";
 import powerPlatformHero from "../assets/services/power_apps.jpg";
 import dataMigrationHero from "../assets/services/power_apps.jpg";
 import financeAccountingHero from "../assets/services/modern-equipped-computer-lab.jpg";
+import digitalMarketingHero from "../assets/services/modern-equipped-computer-lab.jpg";
+
+
+
+
 import dynamic365logo from "../assets/logos/dynamic365.png";
 
 
@@ -1217,7 +1223,7 @@ export const serviceData = {
   ]
 },
 "data-migration": {
-  title: "Precision-Engineered Data Migration for Dynamics 365",
+  title: "Data Migration Services",
   sidebarActive: "Data Migration Services",
   heroImage: dataMigrationHero,
 
@@ -1235,16 +1241,16 @@ export const serviceData = {
     },
 
     // -------------------------------------------------
-    // INTRO SECTION
+    // INTRO
     // -------------------------------------------------
     {
       type: "paragraph",
       text:
-        "Modernizing to Dynamics 365 is a strategic leap—but only if your data makes the journey intact. Inconsistent, incomplete, or poorly migrated data remains one of the biggest risks to digital transformation. Our enterprise-grade Data Migration Services eliminate these risks through full automation, proven methodology, and a 100% success track record—delivering migrations that are 60% faster, 99.8% accurate, and completely interruption-free."
+        "Modernizing to Dynamics 365 is a strategic leap—but only if your data makes the journey intact. For executives driving transformation, inconsistent, incomplete, or poorly migrated data remains one of the biggest risks to success. Our enterprise-grade Data Migration Services eliminate that risk. Through full automation, proven methodology, and a 100% success track record, we deliver migrations that are 60% faster, 99.8% accurate, and completely free from business interruption."
     },
 
     // -------------------------------------------------
-    // IMPORTANCE OF MIGRATION
+    // STRATEGIC IMPORTANCE
     // -------------------------------------------------
     {
       type: "section-title",
@@ -1253,11 +1259,11 @@ export const serviceData = {
     {
       type: "paragraph",
       text:
-        "Data migration is one of the most underestimated—and dangerous—elements of any transformation. Research shows that 38% of migrations exceed budget or timelines due to manual processes, inconsistent data quality, and lack of governance. For organizations moving to Dynamics 365, this can lead to serious delays, costly rework, and eroded stakeholder confidence. Our approach replaces uncertainty with structure, automation, and predictability."
+        "Data migration is one of the most underestimated—and most dangerous—elements of any transformation. Independent research shows that 38% of migrations run over budget or timeline, largely due to manual tools, inconsistent quality, and ad hoc processes. For organizations moving to Dynamics 365, this can lead to operational delays, costly rework, and erosion of stakeholder confidence. Our approach replaces uncertainty with predictability, structure, and automation, ensuring a controlled, risk-free modernization journey."
     },
 
     // -------------------------------------------------
-    // COMPLEXITY + OUR SOLUTION
+    // COMPLEXITY + EVALUATION
     // -------------------------------------------------
     {
       type: "section-title",
@@ -1266,7 +1272,7 @@ export const serviceData = {
     {
       type: "bullets",
       items: [
-        "Transformation phases and deployment timelines",
+        "Transformation phases, deployment timelines, and readiness",
         "Number of legal entities and business units",
         "Scope and ambition of your Dynamics 365 program",
         "Quantity, quality, and structure of legacy data",
@@ -1275,14 +1281,9 @@ export const serviceData = {
         "Historical vs. transactional data considerations"
       ]
     },
-    {
-      type: "paragraph",
-      text:
-        "Our assessment framework ensures migrations are faster, cleaner, and aligned with business outcomes—not just technical tasks."
-    },
 
     // -------------------------------------------------
-    // END-TO-END MIGRATION APPROACH
+    // UNIFIED MIGRATION APPROACH
     // -------------------------------------------------
     {
       type: "section-title",
@@ -1292,7 +1293,7 @@ export const serviceData = {
       type: "bullets",
       items: [
         "Automated end-to-end migration",
-        "Source-to-target mapping & business rule alignment",
+        "Source-to-target mapping and business rules",
         "Automated ETL pipelines",
         "Full project management and governance",
         "Extraction, transformation & load (ETL) scripting",
@@ -1302,44 +1303,46 @@ export const serviceData = {
     },
 
     // -------------------------------------------------
-    // FAIL VS SUCCESS APPROACH
+    // COMPARISON TABLE
     // -------------------------------------------------
     {
       type: "section-title",
       title: "Where Other Migrations Fail—and Why Ours Don’t"
     },
     {
-      type: "section-title",
-      title: "Industry Norm (High Risk)"
-    },
-    {
-      type: "bullets",
-      items: [
-        "Scripts and spreadsheets",
-        "Manual intervention",
-        "Non-repeatable processes",
-        "High-risk deployment scenarios",
-        "Unpredictable timelines and outcomes"
+      type: "comparison-table",
+      columns: ["Industry Norm (High Risk)", "Our Standard (Low Risk & Predictable)"],
+      rows: [
+        [
+    "Scripts and spreadsheets",
+    "Standardized and repeatable transformations"
+  ],
+  [
+    "Manual intervention",
+    "Automated overnight execution cycles"
+  ],
+  [
+    "Non-repeatable processes",
+    "Clean, fully validated data every time"
+  ],
+  [
+    "High-risk deployment scenarios",
+    "Minimal business disruption"
+  ],
+  [
+    "Unpredictable timelines and outcomes",
+    "Predictable go-live outcomes"
+  ]
       ]
     },
-
     {
-      type: "section-title",
-      title: "Our Standard (Low Risk & Predictable)"
-    },
-    {
-      type: "bullets",
-      items: [
-        "Automated and repeatable execution cycles",
-        "Predictable go-live outcomes",
-        "Minimal business disruption",
-        "Clean, fully validated data every time",
-        "Standardized, scalable methodology"
-      ]
+      type: "paragraph",
+      text:
+        "Scalable + Automated + Repeatable = Predictable and Low Risk. Our BIDM methodology transforms migration from a high-risk, manual exercise into a controlled and automated process. By replacing spreadsheets, intervention-heavy tasks, and non-repeatable steps with standardized, repeatable, and fully validated execution cycles, we ensure predictable go-live outcomes, minimal business disruption, and consistently clean data. This approach delivers a migration experience that is reliable, efficient, and built for long-term success."
     },
 
     // -------------------------------------------------
-    // PILLARS OF EXCELLENCE
+    // OPERATIONAL EXCELLENCE
     // -------------------------------------------------
     {
       type: "section-title",
@@ -1348,36 +1351,54 @@ export const serviceData = {
     {
       type: "steps",
       steps: [
-        "BIDM Methodology – A proprietary framework embedding governance, automation, and business logic into every stage.",
-        "Expert Data Migration Specialists – Full-time, certified, and deeply experienced in D365 migrations.",
-        "Purpose-Built Toolsets – Our DM REVOLVE platform automates migration end-to-end with nightly, no-touch cycles."
+        "BIDM Methodology: A proprietary framework refined through years of delivering complex, global migrations. It embeds business logic, governance, risk controls, and automation into every step.",
+        "Expert, Full-Time Data Migration Specialists: Our teams are not contractors—they are trained, certified, and deeply experienced in our tools and Microsoft Dynamics 365 ecosystems.",
+        "Purpose-Built Toolsets: Our proprietary platform, DM REVOLVE, automates migration end-to-end. Once deployed, it runs the entire migration nightly and without manual effort, bringing unmatched speed, consistency, and reliability."
       ]
     },
 
     // -------------------------------------------------
-    // MIGRATION READINESS
+    // MIGRATION-READY (TILES)
     // -------------------------------------------------
     {
       type: "section-title",
       title: "Ensuring Your Entire Data Landscape Is Migration-Ready"
     },
     {
-      type: "bullets",
-      items: [
-        "Cleansing, deduplication & data integrity checks",
-        "Treatment of incomplete, missing, orphaned & obsolete data",
-        "Historical & current data strategy",
-        "Enterprise-wide data scoping & planning",
-        "Source-to-target mapping & business rule validation",
-        "ETL script development & repeatable transformation cycles",
-        "Environment setup, governance, and deployment strategy",
-        "UAT & integration testing",
-        "Cutover management & compliance controls"
+      type: "tiles-bullets",
+      tiles: [
+        {
+          heading: "Data Quality & Structure",
+          bullets: [
+            "Cleansing, deduplication & integrity checks",
+            "Treatment of incomplete, missing, orphaned & obsolete data",
+            "Historical & current data treatment",
+            "Enterprise-wide data scoping & planning"
+          ]
+        },
+        {
+          heading: "Mapping & Transformation",
+          bullets: [
+            "Source-to-target mapping",
+            "Business rule validation",
+            "ETL script development",
+            "Automated, repeatable transformation cycles"
+          ]
+        },
+        {
+          heading: "Platform & Governance",
+          bullets: [
+            "Migration platform setup",
+            "Environment and deployment strategy",
+            "UAT and integration testing",
+            "Release, cutover management & compliance controls"
+          ]
+        }
       ]
     },
 
     // -------------------------------------------------
-    // WHY CHOOSE US
+    // WHY PARTNER WITH US
     // -------------------------------------------------
     {
       type: "section-title",
@@ -1386,11 +1407,13 @@ export const serviceData = {
     {
       type: "paragraph",
       text:
-        "As certified Microsoft Data Migration Implementation Partners, we help organizations transition from outdated systems to Dynamics 365—quickly, accurately, and without disruption. If your transformation demands certainty, automation, and executive-grade assurance, we deliver exactly that."
+        "As certified Microsoft Data Migration Implementation Partners and a dedicated specialist migration firm, we help organizations transition from outdated systems to Dynamics 365—fast, accurately, and without disruption. If your transformation demands certainty, automation, and executive-grade assurance, we deliver exactly that."
     },
+    
+    
 
     // -------------------------------------------------
-    // HIGHLIGHT
+    // HIGHLIGHT BOX
     // -------------------------------------------------
     {
       type: "highlight",
@@ -1406,11 +1429,12 @@ export const serviceData = {
     {
       type: "cta",
       text: "Talk to a Data Migration Specialist",
-      button: "Speak to an Expert",
+      button: "Connect With Us",
       link: "/contact"
     }
   ]
 },
+
 "finance-accounting": {
   title: "Finance & Accounting Services",
   sidebarActive: "Finance & Accounting Services",
@@ -1601,6 +1625,308 @@ export const serviceData = {
     }
   ]
 },
+"digital-marketing": {
+  title: "Digital Marketing Services",
+  sidebarActive: "Digital Marketing Services",
+  heroImage: digitalMarketingHero, // <-- Add your image import
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO SECTION
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Turn Your Online Presence into a Competitive Advantage",
+      subheading:
+        "Data-driven digital marketing that builds visibility, drives engagement, and delivers measurable results.",
+      button: "Contact us today",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // WHY BUSINESSES CHOOSE US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Businesses Choose Our Digital Marketing Services"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Marketing leaders today need more than campaigns—they need performance-driven solutions that elevate brand relevance and drive predictable, scalable growth. Our approach blends strategy with execution, ensuring every digital touchpoint contributes to business outcomes."
+    },
+    {
+      type: "bullets",
+      items: [
+        "Improve online visibility across search engines",
+        "Drive organic traffic and high-intent lead generation",
+        "Strengthen brand perception and customer engagement",
+        "Build SEO-optimized, conversion-focused digital experiences",
+        "Establish a consistent and compelling social media presence",
+        "Track results with clarity and measurable KPIs"
+      ]
+    },
+
+    // -------------------------------------------------
+    // DIGITAL MARKETING SOLUTIONS
+    // -------------------------------------------------
+  
+    {
+  type: "tiles-advanced",
+  title: "Our Digital Marketing Solutions",
+  tiles: [
+    {
+      heading: "SEO-Compliant Website Development",
+      description:
+        "Design and development of modern, responsive websites built with:",
+      bullets: [
+        "SEO-friendly architecture",
+        "Fast loading times",
+        "Optimized content structure",
+        "Mobile-first experience",
+        "Strong user experience design (UX/UI)"
+      ],
+      footer:
+        "Every website is engineered to perform well in search results and convert visitors into customers."
+    },
+
+    {
+      heading: "Search Engine Optimization (SEO)",
+      description:
+        "We help you rank higher, attract quality traffic, and convert it. Our SEO services include:",
+      bullets: [
+        "Keyword strategy & search intent mapping",
+        "On-page and technical SEO",
+        "Content optimization",
+        "Competitor benchmarking",
+        "Backlink and authority-building strategies",
+        "Continuous performance monitoring and improvements"
+      ],
+      footer:
+        "The result: sustainable, long-term growth in organic visibility."
+    },
+
+    {
+      heading: "Social Media Strategy & Execution",
+      description:
+        "We develop social media strategies that amplify your brand and create meaningful audience engagement. Our services cover:",
+      bullets: [
+        "Social media content planning",
+        "Calendar and channel strategy",
+        "Engagement and community management",
+        "Paid social campaigns (optional add-on)",
+        "Analytics and conversion tracking"
+      ],
+      footer:
+        "Your brand becomes more visible, relevant, and connected across digital channels."
+    }
+  ]
+},
+    // -------------------------------------------------
+    // MEASURABLE OUTCOMES
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Measurable Marketing Outcomes"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Digital marketing should deliver results—not just activity. We ensure:"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Clear KPIs aligned with business goals",
+        "Transparent reporting",
+        "Continuous optimization",
+        "Performance insights that inform better decisions"
+      ]
+    },
+    {
+      type: "paragraph",
+      text:
+        "Every initiative is engineered for measurable impact."
+    },
+
+    // -------------------------------------------------
+    // WHY PARTNER WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title:
+        "Partner With a Digital Marketing Team That Understands Growth"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Whether you're establishing your online presence, scaling digital engagement, or optimizing campaigns for better results, we help you build a marketing engine that performs."
+    },
+    {
+      type: "paragraph",
+      text:
+        "Strengthen your brand. Drive engagement. Deliver measurable impact."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Ready to Grow Your Digital Presence?",
+      button: "Contact us to get started",
+      link: "/contact"
+    }
+  ]
+},
+  "d365-support": {
+  title: "Microsoft Dynamics 365 Support Services",
+  sidebarActive: "Microsoft Dynamics 365 Support Services",
+  heroImage: d365SupportHero,
+
+  blocks: [
+    // -------------------------------------------------
+    // HERO SECTION
+    // -------------------------------------------------
+    {
+      type: "hero",
+      heading: "Always-On Support for a System That Never Slows Down",
+      subheading:
+        "Proactive, expert-led Dynamics 365 support that keeps your operations stable, secure, and future-ready.",
+      button: "Talk to us today",
+      link: "/contact"
+    },
+
+    // -------------------------------------------------
+    // WHY DEDICATED SUPPORT MATTERS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Dedicated Support Makes All the Difference"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Deploying Microsoft Dynamics 365 is a powerful step — but sustaining performance, reliability, and scalability requires ongoing care. Without proper maintenance, even the best ERP/CRM systems can suffer from downtime, data issues, performance bottlenecks, and user friction."
+    },
+    {
+      type: "paragraph",
+      text:
+        "Our Dynamics 365 Support Services offer the expertise, structure, and responsiveness you need to ensure your system remains a strategic asset — not a liability."
+    },
+    {
+      type: "paragraph",
+      text:
+        "And because we operate with a globally distributed support team, we cover any geography comprehensively — ensuring consistent, high-quality support across time zones, languages, and regions."
+    },
+
+    // -------------------------------------------------
+    // TILE SECTION — EXACT CONTENT
+    // -------------------------------------------------
+    {
+      type: "tiles-bullets",
+      title: "Comprehensive Support & Maintenance — What We Provide",
+      tiles: [
+        {
+          heading: "Proactive Monitoring & Troubleshooting",
+          bullets: [
+            "Our team keeps tabs on system health, infrastructure, integrations and performance — identifying and resolving issues before they affect operations."
+          ]
+        },
+        {
+          heading: "Technical & Functional Support",
+          bullets: [
+            "From module configuration and business-process logic errors to integration issues and custom code problems — we support both core ERP/CRM functions and bespoke enhancements."
+          ]
+        },
+        {
+          heading: "Performance Optimization",
+          bullets: [
+            "Slow response times? Inefficient processes? Our experts audit and fine-tune database settings, workloads, customizations, and integration points to deliver fast, stable, scalable performance."
+          ]
+        },
+        {
+          heading: "Version Upgrades & Patch Management",
+          bullets: [
+            "We handle compatibility checks, customization reviews, testing and deployment of updates — so you benefit from the latest Dynamics 365 features without risking disruption."
+          ]
+        },
+        {
+          heading: "User Help Desk & End-User Support",
+          bullets: [
+            "From login issues to module navigation and basic troubleshooting, we offer first-line support — reducing burden on your internal IT team and ensuring a smooth user experience."
+          ]
+        },
+        {
+          heading: "Flexible Support Models to Fit Your Needs",
+          bullets: [
+            "Whether you need ad-hoc support, prepaid hours, annual maintenance contracts, or a dedicated offshore/offsite support team — you choose the model that matches your scale and budget.",
+            "With teams across multiple regions, we offer true follow-the-sun support — ensuring your users get help whenever and wherever they need it."
+          ]
+        }
+      ]
+    },
+
+    // -------------------------------------------------
+    // WHY PARTNER WITH US
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Why Partnering With Us Gives You a Competitive Advantage"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Dedicated, certified Dynamics 365 specialists with deep domain experience across ERP, CRM, integrations, and Power Platform.",
+        "Service Level Agreements (SLAs) and escalation matrices — clear response times, ticketing portal, and single point of contact ensure accountability and transparency.",
+        "Support across all modules & integrations — we don’t just support core systems, but also custom integrations, third-party apps, and hybrid environments.",
+        "Improved ROI and operational stability — by preventing downtime, reducing manual effort, and ensuring system reliability, your team stays focused on business goals, not firefighting.",
+        "Scalable support that adapts with your business growth — whether you expand modules, add users, or integrate new systems, our support evolves seamlessly.",
+        "Global delivery capability — seamless support coverage no matter where your teams, entities, or operations are located."
+      ]
+    },
+
+    // -------------------------------------------------
+    // IDEAL FOR ORGANIZATIONS
+    // -------------------------------------------------
+    {
+      type: "section-title",
+      title: "Ideal for Organizations That Want"
+    },
+    {
+      type: "bullets",
+      items: [
+        "24/7 or business-hours support without adding in-house overhead",
+        "Confidence that customizations, integrations, and daily operations run smoothly",
+        "Fast response to technical or user issues",
+        "Predictable costs with flexible support models",
+        "A trusted partner to manage updates, security, performance, and maintenance",
+        "A global support footprint capable of servicing multiple countries or regions"
+      ]
+    },
+
+    // -------------------------------------------------
+    // HIGHLIGHT
+    // -------------------------------------------------
+    {
+      type: "highlight",
+      bg: "#00255d",
+      textColor: "#ffffff",
+      text:
+        "Don’t let system glitches or maintenance overhead undermine the value of your Dynamics investment. Let us handle support, maintenance, upgrades, and performance — so your business stays uninterrupted, compliant, and ready to scale."
+    },
+
+    // -------------------------------------------------
+    // CTA
+    // -------------------------------------------------
+    {
+      type: "cta",
+      text: "Safeguard Your Dynamics 365 Investment — Start Today",
+      button: "Connect with our experts",
+      link: "/contact"
+    }
+  ]
+}
 
 
   // Your other services stay untouched

@@ -92,6 +92,68 @@ const ServicePageDynamic = () => {
                     </div>
                   </div>
                 );
+              case "tiles-advanced":
+                return (
+                  <div key={idx}>
+                    {block.title && (
+                      <h2 className="block-section-title">{block.title}</h2>
+                    )}
+
+                    <div className="tiles-grid-bullet">
+                      {block.tiles.map((tile, tIdx) => (
+                        <div key={tIdx} className="tile-card-bullet">
+                          <h3 className="tile-title">{tile.heading}</h3>
+
+                          {/* description paragraph */}
+                          {tile.description && (
+                            <p className="tile-description">
+                              {tile.description}
+                            </p>
+                          )}
+
+                          {/* bullet list */}
+                          <ul className="tile-bullets">
+                            {tile.bullets.map((b, i) => (
+                              <li key={i}>{b}</li>
+                            ))}
+                          </ul>
+
+                          {/* footer paragraph */}
+                          {tile.footer && (
+                            <p className="tile-footer">{tile.footer}</p>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+                case "comparison-table":
+  return (
+    <div key={idx} className="comparison-table-container">
+      {block.title && <h2 className="block-section-title">{block.title}</h2>}
+
+      <table className="comparison-table">
+        <thead>
+          <tr>
+            {block.columns.map((col, cIdx) => (
+              <th key={cIdx}>{col}</th>
+            ))}
+          </tr>
+        </thead>
+
+        <tbody>
+          {block.rows.map((row, rIdx) => (
+            <tr key={rIdx}>
+              {row.map((cell, cIdx) => (
+                <td key={cIdx}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+
 
               case "paragraph":
                 return (

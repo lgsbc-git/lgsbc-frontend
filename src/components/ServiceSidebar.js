@@ -13,6 +13,7 @@ const services = [
   { name: "Data Migration Services", slug: "data-migration" },
   { name: "Finance & Accounting Services", slug: "finance-accounting" },
   { name: "Digital Marketing", slug: "digital-marketing" },
+  { name: "Microsoft Dynamics 365 Support Services", slug: "d365-support" },
 ];
 
 const ServiceSidebar = ({ active }) => (

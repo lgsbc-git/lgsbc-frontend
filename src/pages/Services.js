@@ -15,7 +15,7 @@ import icon8 from "../assets/services/highlightpage/Platform Development & Train
 import icon9 from "../assets/services/highlightpage/Data Migration.png";
 import icon10 from "../assets/services/highlightpage/Finance & Accounting Services.png";
 import icon11 from "../assets/services/highlightpage/Digital Marketing.png";
-
+// import icon12 from "../assets/services/highlightpage/D365 Support Services.png"; // ← NEW ICON
 
 const servicesList = [
   {
@@ -83,7 +83,17 @@ const servicesList = [
     desc: "Our digital marketing services cover SEO-compliant websites, SEO optimization and social media strategy. We help businesses boost online presence, engage customers and achieve measurable marketing outcomes.",
     link: "/services/digital-marketing",
     icon: icon11,
-  }
+  },
+
+  // ------------------------------------------------------------
+  // ⭐ NEW SERVICE ADDED — Microsoft Dynamics 365 Support Services
+  // ------------------------------------------------------------
+  {
+    title: "Microsoft Dynamics 365 Support Services",
+    desc: "Proactive, expert-led Dynamics 365 support that keeps your operations stable, secure, and future-ready. We provide monitoring, troubleshooting, performance optimization, upgrades, help desk support, and flexible support models to ensure uninterrupted business operations.", // extracted from doc
+    link: "/services/d365-support",
+    icon: icon2,
+  },
 ];
 
 const Services = () => {
@@ -130,7 +140,6 @@ const Services = () => {
             >
               Read More
             </button>
-
 
           </div>
         ))}
