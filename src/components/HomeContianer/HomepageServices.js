@@ -112,7 +112,7 @@ function HomepageServices() {
         <p className="services-subtitle">Our Services</p>
 
         <h2 className="services-title">
-          Transforming Businesses With <br />
+          Transforming Businesses with <br />
           End-To-End <br />
           <span>Technology Solutions</span>
         </h2>

@@ -13,14 +13,13 @@ function AboutLGS() {
         <p className="aboutlgs-subtitle">About LSGTech</p>
 
         <h2 className="aboutlgs-title">
-          Empowering Businesses Through <br />
+          Empowering Businesses through <br />
           Intelligent Technology <br />
           Solutions
         </h2>
 
         <p className="aboutlgs-desc">
-          At LSGTech, We Believe Technology Should Simplify Complexity 
-          And Drive Growth Not Slow It Down.
+          At LSGTech, We Believe Technology Should Simplify Complexity and Drive Growth, Not Slow It Down. 
         </p>
 
         <button className="about-btn">Read More</button>

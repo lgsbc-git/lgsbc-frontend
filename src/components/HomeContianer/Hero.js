@@ -17,13 +17,13 @@ function Hero() {
 
         <h1 className="hero-title">
           Empowering Businesses With Intelligent <br />
-          ERP & Cloud Solutions
+          Business Applications & Cloud Solutions
         </h1>
 
         <p className="hero-tagline">
-          Transform The Way You Work With Expert-Led Dynamics 365 Consulting,
+          Transform The Way You Work with Expert-Led Dynamics 365 Consulting,
           Seamless Data Migration, And Scalable Azure Cloud Solutions — All
-          Tailored To Your Growth.
+          Tailored to Your Growth.
         </p>
 
         <div className="hero-stats">

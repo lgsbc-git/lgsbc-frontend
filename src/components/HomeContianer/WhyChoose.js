@@ -19,9 +19,7 @@ function WhyChoose() {
       </h2>
 
       <p className="why-description">
-        In A World Where Technology Evolves Faster Than Ever, Choosing The Right Partner Makes All The 
-        Difference. At LGSTech, We Go Beyond Solutions — We Deliver Success. Our Approach Blends 
-        Innovation, Expertise, And Integrity To Help Your Business Stay Ahead In A Competitive Landscape.
+        In a world where technology evolves faster than ever, choosing the right partner makes all the difference. At LSGTech, we go beyond delivering solutions — we deliver success. Our approach blends innovation, expertise, and integrity to help your business stay ahead in a competitive landscape.
       </p>
 
       {/* ===== MAIN CONTENT WRAPPER ===== */}
@@ -36,8 +34,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Proven Expertise</h3>
               <p>
-                With deep experience across ERP systems, Dynamics 365, Azure Cloud, and data migration, our
-                team brings unmatched technical know-how and strategic insight to every project.
+                Leveraging deep expertise in Dynamics 365, Azure cloud, application development, data migration, and enterprise integrations, we deliver strategic insight and technical excellence—helping you build, optimize, and scale your business with confidence. 
               </p>
             </div>
           </div>
@@ -49,8 +46,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Tailored Solutions</h3>
               <p>
-                We understand that every business is unique. Our solutions are customized to fit your goals,
-                workflows, and future growth — not one-size-fits-all templates.
+                We recognize that every business operates differently. Our solutions are purpose-built around your goals, workflows, and growth ambitions—not constrained by one-size-fits-all templates. 
               </p>
             </div>
           </div>
@@ -70,8 +66,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>End-To-End Support</h3>
               <p>
-                From consultation and implementation to training and optimization, we're with you at every 
-                step of your digital journey.
+                From strategic advisory and implementation to training and continuous optimization, we provide end-to-end support that elevates every stage of your digital transformation journey. 
               </p>
             </div>
           </div>
@@ -83,8 +78,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Innovation At The Core</h3>
               <p>
-                We continuously evolve our strategies and adopt cutting-edge technologies to ensure your 
-                business remains modern, efficient, and future-ready.
+                We lead with innovation—continuously enhancing our strategies and adopting advanced technologies to ensure your business stays modern, agile, and future-ready. 
               </p>
             </div>
           </div>
