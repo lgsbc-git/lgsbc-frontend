@@ -1,7 +1,7 @@
 /* MAIN CONTAINER */
 .products-page-container {
   padding: 120px 120px;
-  background: #f7f9fc;
+  background: #e7e8e88e;
 }
 
 /* HERO SECTION */
@@ -52,12 +52,12 @@
   background: #fff;
   padding: 50px 25px;
   border-radius: 16px;
-     box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.08);
+      box-shadow: -1px 1px 2px 0px rgb(88 88 88 / 13%);
   transition: 0.3s ease;
 }
 
 .products-page-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
