@@ -1,0 +1,232 @@
+/* ===============================
+   WORK PROCESS SECTION
+=============================== */
+.work-process-section {
+  width: 100%;
+  background: transparent;
+  padding: 100px 0;
+  /* color: #ffffff; */
+}
+
+.work-process-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Main Heading */
+.work-process-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 3.56rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 100px;
+ 
+  letter-spacing: -1px;
+}
+
+/* ===============================
+   PROCESS STEPS LAYOUT
+=============================== */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  position: relative;
+}
+
+/* Individual Process Step */
+.process-step {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+/* Alternate left and right positioning */
+.process-step.left {
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.process-step.right {
+  /* grid-template-columns: 1fr 0.5fr; */
+  direction: rtl; /* Reverses the grid flow */
+}
+
+.process-step.right > * {
+  direction: ltr; /* Reset direction for text content */
+}
+
+/* ===============================
+   PROCESS CONTENT
+=============================== */
+.process-content {
+  padding: 40px;
+}
+
+.process-title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.9rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  
+  letter-spacing: 1px;
+}
+
+.process-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  /* color: rgba(255, 255, 255, 0.793); */
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ===============================
+   PROCESS IMAGE
+=============================== */
+.process-image-wrapper {
+  overflow: hidden;
+ 
+}
+
+.process-image {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+
+/* ===============================
+   TIMELINE CONNECTOR
+=============================== */
+.timeline-line {
+  position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100px;
+    background: linear-gradient(to bottom, #004aad, transparent);
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 0;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+@media (max-width: 1024px) {
+  .work-process-heading {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+  }
+
+  .process-step {
+    gap: 40px;
+    grid-template-columns: 1fr !important;
+  }
+
+  .process-step.right {
+    direction: ltr;
+  }
+
+  .process-content {
+    padding: 30px;
+  }
+
+  .process-title {
+    font-size: 1.8rem;
+  }
+
+  .process-image {
+    height: 250px;
+  }
+
+  .timeline-line {
+    left: 50%;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-process-section {
+    padding: 70px 0;
+  }
+
+  .work-process-container {
+    padding: 0 30px;
+  }
+
+  .work-process-heading {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+  }
+
+  .process-steps {
+    gap: 50px;
+  }
+
+  .process-content {
+    padding: 25px;
+    border-radius: 12px;
+  }
+
+  .process-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .process-subtitle {
+    font-size: 1rem;
+  }
+
+  .process-image {
+    height: 200px;
+  }
+
+  .timeline-line {
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-process-container {
+    padding: 0 20px;
+  }
+
+  .work-process-heading {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .process-steps {
+    gap: 40px;
+  }
+
+  .process-step {
+    gap: 20px;
+  }
+
+  .process-content {
+    padding: 20px;
+  }
+
+  .process-title {
+    font-size: 1.3rem;
+  }
+
+  .process-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .process-image {
+    height: 150px;
+  }
+
+  .timeline-line {
+    height: 30px;
+  }
+}
