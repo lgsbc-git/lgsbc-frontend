@@ -4,6 +4,7 @@ import archiveIcon from "../assets/logos/Dynamics365_scalable.svg";
 import timesheetIcon from "../assets/logos/powerapp.png";
 import fixedAssetsIcon from "../assets/logos/powerapp.png";
 import azureDevOpsIcon from "../assets/logos/icons8-azure-48.png";
+// import migrationDynamicsIcon from "../assets/logos/Dynamics365_scalable.svg";
 
 export const productsData = {
   "d365-data-migration": {
@@ -11,78 +12,229 @@ export const productsData = {
     sidebarActive: "Microsoft Dynamics 365 Data Migration Solution",
     heroImage: migrationDynamicsIcon,
     category: "Data Migration",
+
     blocks: [
+      // HERO
       {
         type: "hero",
         heading: "Microsoft Dynamics 365 Data Migration Solution",
         subheading:
-          "End-to-end migration to Dynamics 365 with validation, rollback and automation.",
-        button: "Learn More",
+          "De-risk your Dynamics 365 transformation with predictable, automated, end-to-end migration.",
+        button: "Migrate With Confidence",
+        link: "/contact",
       },
+
+      // SECTION 1
       {
         type: "section-title",
-        title: "Overview",
+        title: "The Future of Migration Is Predictable",
       },
       {
         type: "paragraph",
-        text: "Our Microsoft Dynamics 365 Data Migration Solution ensures a seamless transition of your data to Dynamics 365, incorporating robust validation, rollback capabilities, and automated processes to minimize risks and downtime.",
+        text: "Turn your Dynamics 365 migration into a controlled, repeatable, low-risk process. Every major digital initiative depends on clean, reliable, and well-governed data. For organizations moving to Dynamics 365, the largest barrier is not the platform—but the uncertainty of data migration.",
       },
       {
-        type: "section-title",
-        title: "Key Features",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Comprehensive data mapping and transformation",
-          "Automated validation and error handling",
-          "Rollback mechanisms for safe reversals",
-          "Real-time monitoring and reporting",
-          "Integration with existing systems",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "Benefits",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Reduced migration risks and errors",
-          "Faster implementation timelines",
-          "Cost-effective automation",
-          "Enhanced data integrity",
-          "Scalable for large datasets",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "How It Works",
-      },
-      {
-        type: "steps",
-        steps: [
-          "Assessment and planning phase",
-          "Data extraction and mapping",
-          "Validation and testing",
-          "Migration execution",
-          "Post-migration support",
-        ],
+        type: "paragraph",
+        text: "Our automated migration engine removes uncertainty and provides the one thing leaders rarely get during transformation: confidence.",
       },
       {
         type: "highlight",
         bg: "#00255d",
         textColor: "#ffffff",
-        text: "Experience hassle-free data migration with our proven Dynamics 365 solution.",
+        text: "Key Promise: A proven, automated, multi-cycle migration process that keeps your business running smoothly while you modernize.",
+      },
+
+      // SECTION 2
+      {
+        type: "section-title",
+        title: "The Real Business Risk Behind Migration",
       },
       {
+        type: "paragraph",
+        text: "What’s at stake isn’t just data—it’s operational continuity. Business leaders face significant challenges during digital transformation:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Multi-entity, multi-phase D365 deployments",
+          "Multiple legacy systems with inconsistent data",
+          "Evolving business requirements",
+          "Hidden data quality issues",
+          "Overrun timelines and budget pressures",
+          "38% of all migrations exceed cost or schedule due to ad-hoc methods",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Your business shouldn’t be one of them. We turn your highest-risk migration phase into your most controlled one.",
+      },
+
+      // SECTION 3
+      {
+        type: "section-title",
+        title: "A Predictable Migration Engine Built for Enterprise Leaders",
+      },
+      {
+        type: "paragraph",
+        text: "Engineered to give executives what they need—control, transparency, and reliable outcomes.",
+      },
+      {
+        type: "paragraph",
+        text: "Core Capabilities",
+      },
+      {
+        type: "tiles",
+        tiles: [
+          {
+            icon: "FiArrowRight",
+            title: "Automated Data Extraction, Transformation & Mapping",
+            description:
+              "Seamlessly extract, transform, and map data across systems with zero manual intervention.",
+          },
+          {
+            icon: "BiCheckCircle",
+            title: "Continuous Validation & Error Detection",
+            description:
+              "Real-time validation ensures data integrity at every step of the migration process.",
+          },
+          {
+            icon: "MdOutlineRestartAlt",
+            title: "Rollback & Recovery Safeguards",
+            description:
+              "Business protection through comprehensive rollback and recovery mechanisms for peace of mind.",
+          },
+          {
+            icon: "MdOutlineDashboard",
+            title: "Real-Time Dashboards & Leadership Visibility",
+            description:
+              "Full transparency with executive dashboards providing real-time migration insights.",
+          },
+          {
+            icon: "FiDatabase",
+            title: "Support for Complex Data Models",
+            description:
+              "Handle multi-entity structures, hierarchies, and complex data models effortlessly.",
+          },
+          {
+            icon: "FiLink",
+            title: "Legacy System Integration",
+            description:
+              "Seamless integration with existing legacy systems for smooth transitions.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A single migration engine powering every cycle—repeatable, measurable, reliable.",
+      },
+
+      // SECTION 4
+      {
+        type: "section-title",
+        title: "The Business Impact",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Reduced risk and minimized business disruption",
+          "Shorter timelines and faster realization of D365 value",
+          "Lower migration cost through automation and repeatability",
+          "Improved accuracy and higher-quality reporting",
+          "Scalability for enterprise, global, or high-volume scenarios",
+        ],
+      },
+
+      // SECTION 5
+      {
+        type: "section-title",
+        title: "How the Journey Works",
+      },
+      {
+        type: "paragraph",
+        text: "A clean, visual roadmap for your leadership team.",
+      },
+      {
+        type: "journey",
+        phases: [
+          {
+            title: "Assessment & Planning",
+            description: "Define scope, entities, systems, and readiness",
+          },
+          {
+            title: "Data Extraction & Mapping",
+            description: "Align your legacy data with D365 data models",
+          },
+          {
+            title: "Automated Validation & Testing",
+            description: "Automated checks ensure accuracy early",
+          },
+          {
+            title: "Complete Migration Execution",
+            description:
+              "End-to-end automated deployment with rollback protection",
+          },
+          {
+            title: "Post-Migration Support",
+            description:
+              "Stabilization, verification, and transition guidance after go-live",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Clear phases. Clear progress. Clear outcomes.",
+      },
+
+      // SECTION 6
+      {
+        type: "section-title",
+        title: "The LGSTech Difference",
+      },
+      {
+        type: "paragraph",
+        text: "Where others rely on manual methods, we rely on proven methodology and automation.",
+      },
+      {
+        type: "features",
+        columns: [
+          {
+            icon: "FiCompass",
+            title: "BIDM Methodology",
+            subtitle: "Business Integrated Data Migration",
+            description:
+              "A proprietary, proven framework that aligns migration work with real business processes—not just technical fields.",
+          },
+          {
+            icon: "FiUsers",
+            title: "Expert Migration Specialists",
+            subtitle: "Experienced Professionals",
+            description:
+              "Our teams are experienced professionals trained specifically in complex D365 migrations, ensuring continuity and quality from start to finish.",
+          },
+          {
+            icon: "FiRocket",
+            title: "DM REVOLVE",
+            subtitle: "Automated Execution Platform",
+            description:
+              "Purpose-built to operationalize our methodology, DM REVOLVE runs your migration end-to-end and even nightly, providing repeatable cycles, continuous improvement, and predictable go-live confidence.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Together, these three pillars create a scalable migration system designed for enterprise reliability.",
+      },
+
+      // CTA BLOCK
+      {
         type: "cta",
-        text: "Get Started with Data Migration",
-        button: "Contact Us",
+        text: "Ready to Migrate with Confidence?",
+        button: "Unlock the Migration Engine",
         link: "/contact",
       },
     ],
   },
+
   "AX2012-upgrade": {
     title: "AX2012 to Dynamics 365 Upgrade Solution",
     sidebarActive: "AX2012 to Dynamics 365 Upgrade Solution",

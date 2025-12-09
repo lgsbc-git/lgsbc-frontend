@@ -1,49 +1,65 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "../styles/ServiceDetail.css";
+import * as FiIcons from "react-icons/fi";
+import * as MdIcons from "react-icons/md";
+import * as BiIcons from "react-icons/bi";
+import "../styles/ProductDetail.css";
 import { productsData } from "../data/ProductsData";
 import ProductSidebar from "../components/ProductSidebar";
+import * as FaIcons from "react-icons/fa";
+
+
+// Icon mapping
+const iconMap = {
+  FiArrowRight: FiIcons.FiArrowRight,
+  BiCheckCircle: BiIcons.BiCheckCircle,
+  MdOutlineRestartAlt: MdIcons.MdOutlineRestartAlt,
+  MdOutlineDashboard: MdIcons.MdOutlineDashboard,
+  FiDatabase: FiIcons.FiDatabase,
+  FiLink: FiIcons.FiLink,
+  FiCompass: FiIcons.FiCompass,
+  FiUsers: FiIcons.FiUsers,
+  FiRocket: FaIcons.FaRocket,
+};
 
 const ProductDetailPage = () => {
   const { slug } = useParams();
   const data = productsData[slug];
 
   if (!data) {
-    return <div className="not-found">Product Not ben Found</div>;
+    return <div className="not-found">Product Not Found</div>;
   }
 
   return (
-    <div className="service-detail-container">
-      <h1 className="service-detail-title">{data.title}</h1>
-
-      <div className="service-detail-content-wrapper">
+    <div className="product-detail-container">
+      <div className="product-detail-wrapper">
         <ProductSidebar active={slug} />
 
-        <div className="service-detail-main">
+        <div className="product-detail-main">
           {data.blocks.map((block, idx) => {
             switch (block.type) {
               case "hero":
                 return (
-                  <div
+                  <section
                     key={idx}
                     className="block-hero-banner"
                     style={{
                       backgroundImage: `linear-gradient(
-                      to right,
-                      rgba(0, 0, 0, 0.89),
-                      rgba(29, 29, 29, 0.64),
-                      rgba(105, 103, 103, 0.14)
-                    ), url(${data.heroImage})`,
+                        to right,
+                        rgba(0,0,0,0.85),
+                        rgba(0,0,0,0.55)
+                      ), url(${data.heroImage})`,
                     }}
                   >
                     <h2>{block.heading}</h2>
                     <p>{block.subheading}</p>
-                    {block.button && (
+
+                    {block.button && block.link && (
                       <a href={block.link} className="cta-button">
                         {block.button}
                       </a>
                     )}
-                  </div>
+                  </section>
                 );
 
               case "section-title":
@@ -89,6 +105,77 @@ const ProductDetailPage = () => {
                     }}
                   >
                     {block.text}
+                  </div>
+                );
+
+              case "tiles":
+                return (
+                  <div key={idx} className="block-tiles">
+                    <div className="tiles-grid">
+                      {block.tiles.map((tile, i) => {
+                        const IconComponent = iconMap[tile.icon];
+                        return (
+                          <div key={i} className="tile-card">
+                            <div className="tile-icon">
+                              {IconComponent ? <IconComponent /> : tile.icon}
+                            </div>
+                            <h3 className="tile-title">{tile.title}</h3>
+                            <p className="tile-description">
+                              {tile.description}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+
+              case "journey":
+                return (
+                  <div key={idx} className="block-journey">
+                    <div className="journey-timeline">
+                      {block.phases.map((phase, i) => (
+                        <div key={i} className="journey-phase">
+                          <div className="phase-marker">
+                            <div className="phase-number">{i + 1}</div>
+                          </div>
+                          <div className="phase-content">
+                            <h4 className="phase-title">{phase.title}</h4>
+                            <p className="phase-description">
+                              {phase.description}
+                            </p>
+                          </div>
+                          {i < block.phases.length - 1 && (
+                            <div className="phase-connector"></div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+
+              case "features":
+                return (
+                  <div key={idx} className="block-features">
+                    <div className="features-grid">
+                      {block.columns.map((feature, i) => {
+                        const IconComponent = iconMap[feature.icon];
+                        return (
+                          <div key={i} className="feature-card">
+                            <div className="feature-icon">
+                              {IconComponent ? <IconComponent /> : feature.icon}
+                            </div>
+                            <h4 className="feature-title">{feature.title}</h4>
+                            <p className="feature-subtitle">
+                              {feature.subtitle}
+                            </p>
+                            <p className="feature-description">
+                              {feature.description}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 );
 
