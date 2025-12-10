@@ -1,226 +1,406 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Link } from 'react-router-dom'; // <--- FIX: This line was missing
+// import React, { useEffect, useState, useRef } from "react";
+// import { Link } from 'react-router-dom'; // <--- FIX: This line was missing
+// import "../styles/About.css";
+// import innovation from "../assets/AboutLogo/innovation.png"
+// import customer from "../assets/AboutLogo/customer.png"
+// import excellence from "../assets/AboutLogo/excellence.png"
+// import collaboration from "../assets/AboutLogo/collaboration.png"
+// import integrity from "../assets/AboutLogo/crm.png"
+// import learning from "../assets/AboutLogo/learning.png"
+
+// const About = () => {
+//   // Animated Counters
+//   const [teamCount, setTeamCount] = useState(0);
+//   const [projectsCount, setProjectsCount] = useState(0);
+//   const [usersCount, setUsersCount] = useState(0);
+//   const [hasAnimated, setHasAnimated] = useState(false);
+
+//   const metricsRef = useRef(null);
+
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       (entries) => {
+//         if (entries[0].isIntersecting && !hasAnimated) {
+//           setHasAnimated(true);
+
+//           const animateCounter = (target, setter, duration = 2000) => {
+//             let start = 0;
+//             const step = target / (duration / 16); // ~60fps
+//             const counter = setInterval(() => {
+//               start += step;
+//               if (start >= target) {
+//                 start = target;
+//                 clearInterval(counter);
+//               }
+//               setter(Math.floor(start));
+//             }, 16);
+//           };
+
+//           animateCounter(30, setTeamCount);
+//           animateCounter(100, setProjectsCount);
+//           animateCounter(5000, setUsersCount);
+//         }
+//       },
+//       { threshold: 0.4 } // trigger when 40% of section is visible
+//     );
+
+//     if (metricsRef.current) {
+//       observer.observe(metricsRef.current);
+//     }
+
+//     return () => {
+//       if (metricsRef.current) {
+//         observer.unobserve(metricsRef.current);
+//       }
+//     };
+//   }, [hasAnimated]);
+
+//   return (
+//     <section className="about-section">
+//       <div className="overlay"></div>
+
+//       <div className="about-container">
+//         {/* Heading */}
+//         <h3
+//           className="heading"
+//           data-aos="fade-down"
+//           data-aos-duration="1200"
+//         >
+//           ABOUT US
+//         </h3>
+//         <h1
+//           className="about-title"
+//           data-aos="fade-up"
+//           data-aos-duration="1000"
+//         >
+//           Our Vision is to Transform Businesses with{" "}
+//           <span className="highlight_text">Dynamics 365</span> and{" "}
+//           <span className="highlight_text">Beyond</span>
+//         </h1>
+
+//         {/* Intro */}
+//         <p className="about-intro" >
+//           At LGSTech we empower businesses with strategic insights, digital
+//           transformation and Microsoft Dynamics 365 solutions. Our mission is
+//           to simplify complexity, drive efficiency and help organizations
+//           achieve sustainable growth.
+//         </p>
+
+//         {/* Main About Section */}
+//         <section className="about-main">
+//           <div className="about-text">
+//             <p>
+//               LGS Tech has been a trusted partner in helping enterprises
+//               navigate the complexities of ERP product evaluation, Microsoft
+//               Dynamics 365 consulting and digital transformation.
+//             </p>
+
+//             <p>
+//               With years of expertise, we have delivered scalable, secure and
+//               innovative solutions to organizations across industries, enabling
+//               them to embrace cloud adoption, harness business intelligence and
+//               unlock new growth opportunities.
+//             </p>
+
+//             <p>
+//               Backed by a team of professionals with a proven track record, LGS Tech
+//               is committed to simplifying complexity and empowering businesses
+//               to achieve operational excellence through modern technology and
+//               strategic insights.
+//             </p>
+//           </div>
+
+//           <div className="about-ceo">
+//             <img src="/images/ceo.jpg" alt="CEO" />
+//             <h4>Name</h4>
+//             <p>Founder & CEO</p>
+//           </div>
+//         </section>
+
+//         {/* Metrics Section */}
+//         <section className="metrics-section" ref={metricsRef}>
+//           <div className="metrics-card">
+//             <div className="metric">
+//               <h2>{teamCount}+</h2>
+//               <p>Team members</p>
+//             </div>
+//             <div className="metric">
+//               <h2>{projectsCount}+</h2>
+//               <p>Projects Delivered</p>
+//             </div>
+//             <div className="metric">
+//               <h2>{usersCount.toLocaleString()}+</h2>
+//               <p>Global Users</p>
+//             </div>
+//           </div>
+//         </section>
+
+//         {/* Core Values Section */}
+//         <section className="core-values">
+//           <h2>Our Core Values</h2>
+//           <p className="values-intro">
+//             At LGS Tech, our values guide everything we do. They inspire us to
+//             innovate, deliver excellence and build trusted partnerships with
+//             our clients.
+//           </p>
+
+//           <div className="values-grid">
+//             <div className="value-card">
+//               <img src={innovation} alt="Innovation" className="value-icon" />
+//               <h3>Innovation</h3>
+//               <p>
+//                 We embrace the latest in Dynamics 365 and emerging technologies
+//                 to create smarter solutions.
+//               </p>
+//             </div>
+//             <div className="value-card">
+//               <img src={customer}alt="Customer First" className="value-icon" />
+//               <h3>Customer First</h3>
+//               <p>
+//                 We put clients at the heart of our mission, ensuring every
+//                 solution drives real business impact.
+//               </p>
+//             </div>
+//             <div className="value-card">
+//               <img src={excellence} alt="Excellence" className="value-icon" />
+//               <h3>Excellence</h3>
+//               <p>
+//                 We aim for the highest standards, delivering reliable, scalable
+//                 and future-ready solutions.
+//               </p>
+//             </div>
+//             <div className="value-card">
+//               <img src={integrity}alt="Integrity" className="value-icon" />
+//               <h3>Integrity</h3>
+//               <p>
+//                 We act with transparency and build long-lasting trust with our
+//                 clients and partners.
+//               </p>
+//             </div>
+//             <div className="value-card">
+//               <img src={collaboration} alt="Collaboration" className="value-icon" />
+//               <h3>Collaboration</h3>
+//               <p>
+//                 We believe teamwork drives success — working with clients as
+//                 partners, not just providers.
+//               </p>
+//             </div>
+//             <div className="value-card">
+//               <img src={learning} alt="Continuous Learning" className="value-icon" />
+//               <h3>Continuous Learning</h3>
+//               <p>
+//                 We adapt, learn, and grow to keep our solutions and people ahead
+//                 of the curve.
+//               </p>
+//             </div>
+//           </div>
+//         </section>
+
+//         {/* What We Do Section */}
+//         <section className="what-we-do">
+//           <div className="what-we-do-card">
+//             <h2>What We Do</h2>
+//             <p>
+//               From <strong>ERP product/vendor evaluation</strong> to{" "}
+//               <strong> Dynamics 365 consulting, data migration, digital
+//               marketing</strong> and <strong>Azure cloud solutions</strong> —
+//               we help enterprises streamline operations and unlock growth.
+//             </p>
+//             <div className="btn-group">
+//               <Link to="/services">
+//                 <button className="what-we-do-btn">Explore Our Services</button>
+//               </Link>
+
+//               <Link to="/contact">
+//                 <button className="what-we-do-btn secondary-btn">
+//                   Connect With Us
+//                 </button>
+//               </Link>
+//             </div>
+//           </div>
+//         </section>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default About;
+import React from "react";
+import ConsultationForm from "../components/HomeContianer/ConsultationForm";
 import "../styles/About.css";
-import innovation from "../assets/AboutLogo/innovation.png"
-import customer from "../assets/AboutLogo/customer.png"
-import excellence from "../assets/AboutLogo/excellence.png"
-import collaboration from "../assets/AboutLogo/collaboration.png"
-import integrity from "../assets/AboutLogo/crm.png"
-import learning from "../assets/AboutLogo/learning.png"
+import { Link } from "react-router-dom";
+
+/* -------------------- IMPORT IMAGES -------------------- */
+import imgSmall from "../assets/home/excited-millennial-office-team-giving-high-five-together-teambuilding-concept.jpg"; // Image A
+import imgLarge from "../assets/home/Mission & Vision.webp"; // Image B
+
+// Icons for Story | Mission | Vision
+import iconStory from "../assets/icons/script (1).png";
+import iconMission from "../assets/icons/mission.png";
+import iconVision from "../assets/icons/vision.png";
+/* ------------------------------------------------------- */
+import heroBg from "../assets/services/incomplete-puzzle-with-missing-piece.jpg";
+
 
 const About = () => {
-  // Animated Counters
-  const [teamCount, setTeamCount] = useState(0);
-  const [projectsCount, setProjectsCount] = useState(0);
-  const [usersCount, setUsersCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
-
-  const metricsRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-
-          const animateCounter = (target, setter, duration = 2000) => {
-            let start = 0;
-            const step = target / (duration / 16); // ~60fps
-            const counter = setInterval(() => {
-              start += step;
-              if (start >= target) {
-                start = target;
-                clearInterval(counter);
-              }
-              setter(Math.floor(start));
-            }, 16);
-          };
-
-          animateCounter(30, setTeamCount);
-          animateCounter(100, setProjectsCount);
-          animateCounter(5000, setUsersCount);
-        }
-      },
-      { threshold: 0.4 } // trigger when 40% of section is visible
-    );
-
-    if (metricsRef.current) {
-      observer.observe(metricsRef.current);
-    }
-
-    return () => {
-      if (metricsRef.current) {
-        observer.unobserve(metricsRef.current);
-      }
-    };
-  }, [hasAnimated]);
-
   return (
-    <section className="about-section">
-      <div className="overlay"></div>
+    <div className="about-wrapper">
 
-      <div className="about-container">
-        {/* Heading */}
-        <h3
-          className="heading"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-        >
-          ABOUT US
-        </h3>
-        <h1
-          className="about-title"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          Our Vision is to Transform Businesses with{" "}
-          <span className="highlight_text">Dynamics 365</span> and{" "}
-          <span className="highlight_text">Beyond</span>
-        </h1>
+      <section 
+  className="about-hero"
+  style={{ backgroundImage: `url(${heroBg})` }}
+>
+  <div className="about-hero-overlay"></div>
+  <h1>About Us</h1>
+</section>
 
-        {/* Intro */}
-        <p className="about-intro" >
-          At LGSTech we empower businesses with strategic insights, digital
-          transformation and Microsoft Dynamics 365 solutions. Our mission is
-          to simplify complexity, drive efficiency and help organizations
-          achieve sustainable growth.
-        </p>
 
-        {/* Main About Section */}
-        <section className="about-main">
-          <div className="about-text">
-            <p>
-              LGS Tech has been a trusted partner in helping enterprises
-              navigate the complexities of ERP product evaluation, Microsoft
-              Dynamics 365 consulting and digital transformation.
-            </p>
+      {/* IMAGE + CONTENT SECTION */}
+      <section className="about-main">
 
-            <p>
-              With years of expertise, we have delivered scalable, secure and
-              innovative solutions to organizations across industries, enabling
-              them to embrace cloud adoption, harness business intelligence and
-              unlock new growth opportunities.
-            </p>
-
-            <p>
-              Backed by a team of professionals with a proven track record, LGS Tech
-              is committed to simplifying complexity and empowering businesses
-              to achieve operational excellence through modern technology and
-              strategic insights.
-            </p>
+        {/* LEFT IMAGE COLLAGE */}
+        <div className="about-image-grid">
+          <div className="img-small-top">
+            <img src={imgSmall} alt="Team" />
           </div>
 
-          <div className="about-ceo">
-            <img src="/images/ceo.jpg" alt="CEO" />
-            <h4>Name</h4>
-            <p>Founder & CEO</p>
+          <div className="img-large">
+            <img src={imgLarge} alt="Workplace" />
           </div>
-        </section>
 
-        {/* Metrics Section */}
-        <section className="metrics-section" ref={metricsRef}>
-          <div className="metrics-card">
-            <div className="metric">
-              <h2>{teamCount}+</h2>
-              <p>Team members</p>
-            </div>
-            <div className="metric">
-              <h2>{projectsCount}+</h2>
-              <p>Projects Delivered</p>
-            </div>
-            <div className="metric">
-              <h2>{usersCount.toLocaleString()}+</h2>
-              <p>Global Users</p>
-            </div>
+          <div className="exp-badge">
+            <h2>14+</h2>
+            <p>Year of Experience</p>
           </div>
-        </section>
 
-        {/* Core Values Section */}
-        <section className="core-values">
-          <h2>Our Core Values</h2>
-          <p className="values-intro">
-            At LGS Tech, our values guide everything we do. They inspire us to
-            innovate, deliver excellence and build trusted partnerships with
-            our clients.
+          {/* If you want bottom small image again, uncomment the line below */}
+          {/* <div className="img-small-bottom"><img src={imgSmall} /></div> */}
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div className="about-content">
+          <h2>
+            Empowering Businesses <br />
+            Through Intelligent <br />
+            Technology Solutions
+          </h2>
+
+          <p>
+            At LSGTech, we empower businesses to embrace digital transformation 
+            with confidence and clarity. As a trusted technology consulting partner, 
+            we specialize in ERP product and vendor evaluation, Microsoft Dynamics 365 consulting, 
+            data migration, digital marketing, and Azure cloud solutions—helping organizations 
+            streamline operations, optimize performance, and accelerate growth.
           </p>
 
-          <div className="values-grid">
-            <div className="value-card">
-              <img src={innovation} alt="Innovation" className="value-icon" />
-              <h3>Innovation</h3>
-              <p>
-                We embrace the latest in Dynamics 365 and emerging technologies
-                to create smarter solutions.
-              </p>
-            </div>
-            <div className="value-card">
-              <img src={customer}alt="Customer First" className="value-icon" />
-              <h3>Customer First</h3>
-              <p>
-                We put clients at the heart of our mission, ensuring every
-                solution drives real business impact.
-              </p>
-            </div>
-            <div className="value-card">
-              <img src={excellence} alt="Excellence" className="value-icon" />
-              <h3>Excellence</h3>
-              <p>
-                We aim for the highest standards, delivering reliable, scalable
-                and future-ready solutions.
-              </p>
-            </div>
-            <div className="value-card">
-              <img src={integrity}alt="Integrity" className="value-icon" />
-              <h3>Integrity</h3>
-              <p>
-                We act with transparency and build long-lasting trust with our
-                clients and partners.
-              </p>
-            </div>
-            <div className="value-card">
-              <img src={collaboration} alt="Collaboration" className="value-icon" />
-              <h3>Collaboration</h3>
-              <p>
-                We believe teamwork drives success — working with clients as
-                partners, not just providers.
-              </p>
-            </div>
-            <div className="value-card">
-              <img src={learning} alt="Continuous Learning" className="value-icon" />
-              <h3>Continuous Learning</h3>
-              <p>
-                We adapt, learn, and grow to keep our solutions and people ahead
-                of the curve.
-              </p>
-            </div>
-          </div>
-        </section>
+          <p>
+            With a team of experienced consultants, strategists, and engineers, we bring deep 
+            industry expertise and a results-driven approach to every project.
+          </p>
 
-        {/* What We Do Section */}
-        <section className="what-we-do">
-          <div className="what-we-do-card">
-            <h2>What We Do</h2>
-            <p>
-              From <strong>ERP product/vendor evaluation</strong> to{" "}
-              <strong> Dynamics 365 consulting, data migration, digital
-              marketing</strong> and <strong>Azure cloud solutions</strong> —
-              we help enterprises streamline operations and unlock growth.
-            </p>
-            <div className="btn-group">
-              <Link to="/services">
-                <button className="what-we-do-btn">Explore Our Services</button>
-              </Link>
+          <Link to="/contact">
+            <button className="connect-btn">Connect With Us</button>
+          </Link>
+        </div>
+      </section>
 
-              <Link to="/contact">
-                <button className="what-we-do-btn secondary-btn">
-                  Connect With Us
-                </button>
-              </Link>
-            </div>
-          </div>
-        </section>
+      {/* ================= TOP BLUE STATS BAR ================= */}
+      <div className="values-stats-bar">
+        <div className="value-stat">
+          <h2>150+</h2>
+          <p>
+            Microsoft-Certified Technical Consultants Are Just A Call Away To Help You Out,
+            Irresepective Of The Errors Of The Business Solution.
+          </p>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="value-stat">
+          <h2>99%</h2>
+          <p>
+            Customer Satisfaction Is The Sole Reason We Have Been Working For 500+ Clients
+            Round The Clock.
+          </p>
+        </div>
+
+        <div className="divider"></div>
+
+        <div className="value-stat">
+          <h2>14+</h2>
+          <p>
+            Years Of Experience Have Taught Us to Resolve Challenging Business Issues,
+            In No Time With 100% Success Rate.
+          </p>
+        </div>
       </div>
-    </section>
+
+      {/* ---------------- STORY | MISSION | VISION ---------------- */}
+      <section className="smv-section">
+        <p className="smv-top-text">Our Story | Our Mission | Our Vision.</p>
+
+        <h2 className="smv-title">
+          Leading The Future Of Digital <br /> Transformation
+        </h2>
+
+        <p className="smv-description">
+          Our Approach Is Simple: Combine Deep Expertise With Forward-Thinking Innovation 
+          To Deliver Solutions That Truly Transform The Way Businesses Operate.
+        </p>
+
+        <div className="smv-cards">
+          
+          {/* Story */}
+          <div className="smv-card">
+            <div className="smv-icon">
+              <img src={iconStory} alt="Story Icon" />
+            </div>
+            <h3>Our Story</h3>
+            <p>
+              LSGTech Was Founded With One Goal — To Bridge The Gap Between Complex 
+        Technology And Real Business Problems. We Saw Companies Struggling To 
+        Choose The Right Systems, Manage Legacy Data, And Adopt Cloud Technologies 
+        Without Disrupting Operations. That’s Where Our Journey Began.
+            </p>
+          </div>
+
+          {/* Mission */}
+          <div className="smv-card">
+            <div className="smv-icon">
+              <img src={iconMission} alt="Mission Icon" />
+            </div>
+            <h3>Our Mission</h3>
+            <p>
+              Our Focus Is On Empowering Organizations To Become More Agile, Data-Driven, 
+        And Future-Ready. We Achieve This By Combining Deep Industry Expertise With 
+        Cutting-Edge Technologies — Ensuring Every Solution We Deliver Adds Measurable 
+        Value, Enhances Productivity, And Drives Long-Term Growth.
+            </p>
+          </div>
+
+          {/* Vision */}
+          <div className="smv-card">
+            <div className="smv-icon">
+              <img src={iconVision} alt="Vision Icon" />
+            </div>
+            <h3>Our Vision</h3>
+            <p>
+              Our Goal Is To Continually Push The Boundaries Of Digital Transformation 
+        By Creating Smarter, Faster, And More Connected Business Ecosystems. 
+        Through Continuous Innovation, Unwavering Integrity, And A Commitment 
+        To Client Success, We Aim To Shape A Future Where Technology Is Not Just A Tool.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CONSULTATION FORM */}
+      <section className="consult-container">
+        <ConsultationForm />
+      </section>
+
+    </div>
   );
 };
 
