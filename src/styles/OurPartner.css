@@ -1,42 +1,138 @@
 .partner-section {
   text-align: center;
-  padding: 80px 0;
+  padding: 60px 20px;
   background: #eef2f4;
 }
 
 .partner-title {
   font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: #04356d;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .partner-subtitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-top: 10px;
   margin-bottom: 40px;
   color: #444;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .partner-logos {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .partner-logo-box {
-      width: 180px;
-    height: 130px;
-    border-radius: 14px;
-    background: #fff;
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 28%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 160px;
+  height: 120px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .partner-logo-box img {
-  width: 70%;
+  width: 65%;
+  height: auto;
   object-fit: contain;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+/* Large Tablets (1024px) */
+@media (max-width: 1024px) {
+  .partner-section {
+    padding: 50px 30px;
+  }
+
+  .partner-title {
+    font-size: 1.8rem;
+  }
+
+  .partner-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .partner-logos {
+    gap: 25px;
+  }
+
+  .partner-logo-box {
+    width: 150px;
+    height: 110px;
+  }
+}
+
+/* Medium Tablets (768px) */
+@media (max-width: 768px) {
+  .partner-section {
+    padding: 40px 20px;
+  }
+
+  .partner-title {
+    font-size: 1.6rem;
+  }
+
+  .partner-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
+
+  .partner-logo-box {
+    width: 140px;
+    height: 100px;
+  }
+
+  .partner-logo-box img {
+    width: 60%;
+  }
+}
+
+/* Small Phones (480px) */
+@media (max-width: 480px) {
+  .partner-section {
+    padding: 30px 15px;
+  }
+
+  .partner-title {
+    font-size: 1.3rem;
+  }
+
+  .partner-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+
+  .partner-logos {
+    gap: 15px;
+  }
+
+  .partner-logo-box {
+    width: 120px;
+    height: 90px;
+  }
+
+  .partner-logo-box img {
+    width: 55%;
+  }
 }

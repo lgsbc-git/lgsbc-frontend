@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: 60px;
   background: #f3f7f6;
+  align-items: flex-start;
 }
 
 /* -----------------------------
@@ -19,7 +20,6 @@
   flex: 1;
 }
 
-/* Subheading (Inter) */
 .aboutlgs-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -28,7 +28,6 @@
   font-weight: 500;
 }
 
-/* Main Heading (Inter) */
 .aboutlgs-title {
   font-family: "Inter", sans-serif;
   font-size: 2.6rem;
@@ -38,7 +37,6 @@
   margin-bottom: 25px;
 }
 
-/* Description (Montserrat) */
 .aboutlgs-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
@@ -48,7 +46,6 @@
   line-height: 1.6;
 }
 
-/* Button */
 .about-btn {
   font-family: "Inter", sans-serif;
   background: #04c2b4;
@@ -66,13 +63,11 @@
   background: #049a8a;
 }
 
-/* Bottom image left */
 .about-main-img {
   width: 100%;
   border-radius: 20px;
   margin-top: 20px;
 }
-
 
 /* -----------------------------
    RIGHT SIDE
@@ -91,7 +86,6 @@
   margin-bottom: 100px;
 }
 
-/* Stats Card */
 .about-stats-card {
   width: 65%;
   background: #ffffff;
@@ -103,7 +97,6 @@
   align-items: center;
 }
 
-/* Stat Numbers (Inter) */
 .stat-item h3 {
   font-family: "Inter", sans-serif;
   font-size: 2rem;
@@ -112,7 +105,6 @@
   margin-bottom: 6px;
 }
 
-/* Stat Labels (Montserrat) */
 .stat-item p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -120,39 +112,79 @@
   font-weight: 600;
 }
 
-/* Divider line inside card */
 .divider {
   width: 2px;
   height: 40px;
   background: #ddd;
 }
 
-
 /* ==============================
-   RESPONSIVE
+   RESPONSIVE BREAKPOINTS
 ============================== */
 
+/* 📌 Tablets & Small Laptops */
 @media (max-width: 1100px) {
-  .about-section {
-    padding: 60px 40px;
+  .aboutlgs-section {
     flex-direction: column;
+    padding: 60px 40px;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-main-img {
+    max-width: 80%;
+  }
+
+  .about-team-img {
+    width: 80%;
+    margin-bottom: 60px;
   }
 
   .about-stats-card {
-    width: 100%;
+    width: 80%;
   }
 }
 
+/* 📌 Mobile Devices */
 @media (max-width: 600px) {
-  .about-title {
-    font-size: 2.1rem;
+  .aboutlgs-section {
+    width: 88%;
+    padding: 50px 25px;
+    gap: 40px;
   }
 
-  .about-desc {
+  .aboutlgs-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aboutlgs-desc {
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-btn {
+    width: 50%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .about-main-img {
+    width: 100%;
+  }
+
+  .about-team-img {
+    /* width: 100%; */
+    margin-bottom: 40px;
   }
 
   .about-stats-card {
+    /* width: 100%; */
     flex-direction: column;
     padding: 20px;
     gap: 15px;
@@ -160,5 +192,13 @@
 
   .divider {
     display: none;
+  }
+
+  .stat-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
   }
 }

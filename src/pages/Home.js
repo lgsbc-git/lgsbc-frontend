@@ -21,7 +21,6 @@ export default function Home() {
       <WhyChoose />
       <OurValues />
       <OurWorkProcess />
-      {/* <Testimonials /> */}
       <OurPartner />
       <ConsultationForm />
     </>

@@ -3,9 +3,9 @@
 =============================== */
 .work-process-section {
   width: 100%;
-  background-color: #00255d; /* UPDATED */
+  background-color: #00255d;
   padding: 100px 0;
-  color: #ffffff; /* UPDATED */
+  color: #ffffff;
 }
 
 .work-process-container {
@@ -14,19 +14,19 @@
   padding: 0 30px;
 }
 
-/* Main Heading */
+/* Heading */
 .work-process-heading {
   font-family: "Inter", sans-serif;
   font-size: 3.56rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 100px;
-  color: #ffffff; /* UPDATED */
+  color: #ffffff;
   letter-spacing: -1px;
 }
 
 /* ===============================
-   PROCESS STEPS LAYOUT
+   STEPS LAYOUT
 =============================== */
 .process-steps {
   display: flex;
@@ -43,7 +43,7 @@
   position: relative;
 }
 
-/* Alternate positioning */
+/* Left & Right Variation */
 .process-step.left {
   grid-template-columns: 0.5fr 1fr;
 }
@@ -57,44 +57,45 @@
 }
 
 /* ===============================
-   PROCESS CONTENT
+   CONTENT
 =============================== */
 .process-content {
   padding: 40px;
-  color: #ffffff; /* UPDATED */
+  color: #ffffff;
 }
 
 .process-title {
   font-family: "Inter", sans-serif;
   font-size: 2.9rem;
   font-weight: 600;
-  margin: 0 0 15px 0;
+  margin-bottom: 15px;
   letter-spacing: 1px;
-  color: #ffffff; /* UPDATED */
+  color: #ffffff;
 }
 
 .process-subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 1.45rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85); /* UPDATED */
-  margin: 0;
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.5;
 }
 
 /* ===============================
-   PROCESS IMAGE
+   IMAGE WRAPPER
 =============================== */
 .process-image-wrapper {
   overflow: hidden;
+  border-radius: 200px;
+  height: 230px; /* uniform height */
 }
 
 .process-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 20%;
+  border-radius: 200px;
   transition: transform 0.3s ease;
-  height: 200px;
 }
 
 /* ===============================
@@ -108,12 +109,13 @@
   background: linear-gradient(to bottom, #66a3ff, transparent);
   transform: translateX(-50%);
   top: 100%;
-  margin-top: 0;
 }
 
 /* ===============================
    RESPONSIVE DESIGN
 =============================== */
+
+/* ---------- Tablet (≤ 1024px) ---------- */
 @media (max-width: 1024px) {
   .work-process-heading {
     font-size: 2.8rem;
@@ -121,12 +123,13 @@
   }
 
   .process-step {
-    gap: 40px;
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr !important; /* force stacking */
+    gap: 35px;
+    text-align: center;
   }
 
   .process-step.right {
-    direction: ltr;
+    direction: ltr; /* remove reversal on tablet */
   }
 
   .process-content {
@@ -134,19 +137,24 @@
   }
 
   .process-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  .process-image {
-    height: 250px;
+  .process-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .process-image-wrapper {
+    height: 260px;
+    border-radius: 180px;
   }
 
   .timeline-line {
-    left: 50%;
-    height: 50px;
+    height: 60px;
   }
 }
 
+/* ---------- Mobile (≤ 768px) ---------- */
 @media (max-width: 768px) {
   .work-process-section {
     padding: 70px 0;
@@ -155,26 +163,28 @@
   .work-process-heading {
     font-size: 2.2rem;
     margin-bottom: 50px;
+    padding: 0 20px;
   }
 
   .process-steps {
-    gap: 50px;
+    gap: 80px;
   }
 
   .process-content {
-    padding: 25px;
+    padding: 22px;
   }
 
   .process-title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .process-subtitle {
     font-size: 1rem;
   }
 
-  .process-image {
+  .process-image-wrapper {
     height: 200px;
+    border-radius: 150px;
   }
 
   .timeline-line {
@@ -182,50 +192,39 @@
   }
 }
 
+/* ---------- Small Mobile (≤ 480px) ---------- */
 @media (max-width: 480px) {
   .work-process-container {
-    padding: 0 20px;
+    padding: 0 18px;
   }
 
   .work-process-heading {
-    font-size: 1.8rem;
-    margin-bottom: 40px;
+    font-size: 1.7rem;
+    margin-bottom: 35px;
   }
 
   .process-steps {
-    gap: 40px;
+    gap: 55px;
   }
 
   .process-content {
-    padding: 20px;
+    padding: 18px;
   }
 
   .process-title {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 
   .process-subtitle {
     font-size: 0.9rem;
   }
 
-  .process-image {
-    height: 150px;
+  .process-image-wrapper {
+    height: 160px;
+    border-radius: 130px;
   }
 
   .timeline-line {
-    height: 30px;
+    height: 25px;
   }
-}
-.process-image-wrapper {
-  overflow: hidden;
-  border-radius: 200px; /* fully rounded pill shape */
-  height: 230px; /* fixed height for all */
-}
-
-.process-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* ensures uniform shape */
-  border-radius: 200px; /* match wrapper */
-  transition: transform 0.3s ease;
 }

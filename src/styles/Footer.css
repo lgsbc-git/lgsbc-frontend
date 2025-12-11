@@ -1,12 +1,10 @@
 /* =====================================================
-   MAIN FOOTER WRAPPER — WITH BACKGROUND IMAGE
+   MAIN FOOTER WRAPPER
 ===================================================== */
 .footer-new {
-  background-image: url("../assets/footer_bg.png"); /* <-- your image path */
+  background-image: url("../assets/footer_bg.png");
   background-size: cover;
-  /* background-position: center; */
   background-repeat: no-repeat;
-
   color: #fff;
   padding-top: 120px;
   padding-bottom: 0;
@@ -15,17 +13,15 @@
   z-index: 1;
 }
 
-/* OPTIONAL DARK OVERLAY FOR READABILITY */
 .footer-new::before {
   content: "";
   position: absolute;
   inset: 0;
-  /* background: rgba(9, 9, 164, 0.45); */
   z-index: -1;
 }
 
 /* =====================================================
-   FOOTER CONTENT GRID
+   FOOTER GRID
 ===================================================== */
 .footer-content {
   display: grid;
@@ -35,7 +31,7 @@
 }
 
 /* =====================================================
-   BRAND SECTION
+   BRAND
 ===================================================== */
 .footer-brand {
   max-width: 300px;
@@ -43,7 +39,6 @@
 
 .footer-logo-img {
   width: 150px;
-  /* margin-bottom: 20px; */
 }
 
 .footer-brand-text {
@@ -80,14 +75,13 @@
 }
 
 /* =====================================================
-   NEWSLETTER SECTION
+   NEWSLETTER
 ===================================================== */
 .footer-newsletter h4 {
   margin-bottom: 15px;
   font-size: 1.1rem;
 }
 
-/* Newsletter Input + Button Box */
 .newsletter-box {
   display: flex;
   background: #fff;
@@ -96,17 +90,15 @@
   margin-top: 10px;
 }
 
-/* NEW INPUT CLASS */
 .newsletter-input {
   flex: 1;
-  padding: 5px;
+  padding: 5px 10px;
   border: none;
   outline: none;
   font-family: "Montserrat";
   font-size: 0.95rem;
 }
 
-/* Subscribe button */
 .newsletter-box button {
   width: 55px;
   background: #04c2b4;
@@ -122,7 +114,7 @@
 }
 
 /* =====================================================
-   LOADER INSIDE BUTTON
+   LOADER
 ===================================================== */
 .loader {
   border: 3px solid rgba(255, 255, 255, 0.4);
@@ -134,12 +126,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  from { transform: rotate(0); }
+  to   { transform: rotate(360deg); }
 }
 
 /* =====================================================
-   SUCCESS / ERROR MESSAGE BELOW SUBSCRIBE
+   SUCCESS/ERROR TEXT
 ===================================================== */
 .newsletter-msg {
   font-size: 0.9rem;
@@ -174,8 +166,12 @@
 @media (max-width: 1024px) {
   .footer-content {
     grid-template-columns: 1fr 1fr;
-    padding: 0 40px 60px;
+    padding: 0 50px 50px;
     gap: 40px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
   }
 }
 
@@ -186,10 +182,59 @@
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 0 30px 50px;
+    padding: 0 25px 50px;
+  }
+
+  .footer-brand {
+    margin: 0 auto;
+  }
+
+  .footer-brand-text {
+    max-width: 90%;
+    margin: 10px auto 0;
+  }
+
+  .footer-links h4,
+  .footer-newsletter h4 {
+    margin-top: 25px;
   }
 
   .newsletter-box {
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto 0;
+  }
+
+  .newsletter-box button {
+    font-size: 1rem;
+  }
+}
+
+/* =====================================================
+   EXTRA SMALL PHONES
+===================================================== */
+@media (max-width: 480px) {
+
+  .footer-new {
+    padding-top: 80px;
+  }
+
+  .footer-content {
+    padding: 0 18px 40px;
+    gap: 30px;
+  }
+
+  .newsletter-box {
+    max-width: 300px;
+  }
+
+  .newsletter-input {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom-bar {
+    font-size: 0.8rem;
+    padding: 14px;
   }
 }
