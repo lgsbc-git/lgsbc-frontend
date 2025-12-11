@@ -1,26 +1,37 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/ScrollToTop.css"
+import "../styles/ScrollToTop.css";
 
 function ScrollToTop() {
   const [visible, setVisible] = useState(false);
+  const { pathname } = useLocation();
 
+  // 🔥 Scroll to TOP when route changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant", // prevents mid-scroll glitches
+    });
+  }, [pathname]);
+
+  // 🔥 Show button when scrolling down
   useEffect(() => {
     const onScroll = () => {
       setVisible(window.scrollY > 300);
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // 🔥 Button click scroll
   const handleClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <button
       aria-label="Scroll to top"
-      className={`scroll-to-top left ${visible ? 'show' : ''}`}
+      className={`scroll-to-top left ${visible ? "show" : ""}`}
       onClick={handleClick}
     >
       <svg

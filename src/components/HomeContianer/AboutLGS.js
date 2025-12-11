@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "../../styles/AboutLGS.css";
 
 import aboutMain from "../../assets/home/About Section 1.jpg";
 import aboutTeam from "../../assets/home/About Section 2.jpg";
 
 function AboutLGS() {
+  const navigate = useNavigate();
   return (
     <section className="aboutlgs-section">
       <div className="about-left">
@@ -20,8 +23,9 @@ function AboutLGS() {
           At LGSTech, We Believe Technology Should Simplify Complexity and Drive
           Growth, Not Slow It Down.
         </p>
-
-        <button className="about-btn">Read More</button>
+        <button className="about-btn" onClick={() => navigate("/about")}>
+          Read More
+        </button>
 
         <img src={aboutMain} alt="About" className="about-main-img" />
       </div>
