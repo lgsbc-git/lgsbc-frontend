@@ -7,13 +7,13 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: rgb(246, 245, 245);
   font-family: "Inter", sans-serif;
   color: #f8fafc;
 }
 
 .underdev-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: #00255d;
   padding: 40px;
   border-radius: 16px;
   text-align: center;
@@ -59,7 +59,7 @@
 }
 
 .btn.primary {
-  background: linear-gradient(90deg, #06b6d4, #3b82f6);
+  background: #00807b;
   color: #fff;
 }
 
@@ -69,9 +69,9 @@
 }
 
 .btn.secondary {
-  border: 1px solid #64748b;
-  color: #cbd5e1;
-  background: transparent;
+  border: 1px solid #ffffff;
+  color: #000000;
+  background: white;
 }
 
 .btn.secondary:hover {

@@ -17,7 +17,8 @@ function Header() {
   const [scrollY, setScrollY] = useState(0);
   const location = useLocation();
 
-  const isHome = location.pathname === "/";
+  const isHome = location.pathname === "/" || location.pathname === "/about";
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,7 +30,7 @@ function Header() {
       setIsShrunk(currentY > 50);
 
       // Hide only after scrolling down past 600px
-      if (currentY > 600 && currentY > scrollY) {
+      if (currentY > 300 && currentY > scrollY) {
         setIsVisible(false);
       } else {
         setIsVisible(true);
@@ -83,11 +84,12 @@ function Header() {
 
       <div className="nav-container">
         <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/services">Our Services</Link>
-          <Link to="/products">Products</Link>
-          <Link to="/contact">Contact Us</Link>
+         <Link to="/" className={location.pathname === "/" ? "active-nav" : ""}>Home</Link>
+<Link to="/about" className={location.pathname === "/about" ? "active-nav" : ""}>About Us</Link>
+<Link to="/services" className={location.pathname.startsWith("/services") ? "active-nav" : ""}>Our Services</Link>
+<Link to="/products" className={location.pathname.startsWith("/products") ? "active-nav" : ""}>Products</Link>
+<Link to="/contact" className={location.pathname === "/contact" ? "active-nav" : ""}>Contact Us</Link>
+
         </nav>
 
         <div className="menu-icon" onClick={toggleMenu}>

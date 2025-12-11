@@ -33,11 +33,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import ServicePageDynamic from "./pages/ServicePageDynamic";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
-// import HelpCenter from "./pages/HelpCenter";
-// import Terms from "./pages/Terms";
-// import PrivacyPolicy from "./pages/PrivacyPolicy";
-// import UnderDevelopment from "./pages/UnderDevelopment";
-// import Unsubscribe from "./pages/Unsubscribe";
+import HelpCenter from "./pages/HelpCenter";
+import Terms from "./pages/Terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import UnderDevelopment from "./pages/UnderDevelopment";
+import Unsubscribe from "./pages/Unsubscribe";
 // import D365SecurityPage from "./pages/whatsnew/D365Security";
 // import DatamigrationBest from "./pages/whatsnew/DatamigrationBest";
 // import Dynamics365Implementation from "./pages/whatsnew/Dynamics365Implementation";
@@ -74,6 +74,12 @@ function App() {
 
           <Route path="/products/:slug" element={<ProductDetailPage />} />
 
+          <Route path="/blank" element={<UnderDevelopment />} />
+          <Route path="/help" element={<HelpCenter />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/unsubscribe" element={<Unsubscribe />} />
+          <Route path="*" element={<UnderDevelopment />} />
+          {/* <Route path="/terms" element={<Terms />} /> */}
           {/* 
           <Preloader logoSrc={logo} pieceSize={80} />
           <Route path="/product" element={<Product />} />
@@ -92,58 +98,54 @@ function App() {
           />
           <Route path="/stories" element={<StoryPage />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/help" element={<HelpCenter />} />
 
-          <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/blank" element={<UnderDevelopment />} />
-          <Route path="/unsubscribe" element={<Unsubscribe />} />
           <Route path="/d365-security" element={<D365SecurityPage />} />
           <Route
-            path="/data-migration-best-practices"
-            element={<DatamigrationBest />}
+          path="/data-migration-best-practices"
+          element={<DatamigrationBest />}
           />
           <Route
-            path="/d365-implementation-services"
-            element={<Dynamics365Implementation />}
+          path="/d365-implementation-services"
+          element={<Dynamics365Implementation />}
           />
           <Route
-            path="/d365-data-migration-product"
-            element={<D365DataMigration />}
+          path="/d365-data-migration-product"
+          element={<D365DataMigration />}
           />
           <Route
-            path="/NAXT2012-to-NAXT365-product"
-            element={<NAXT2012toNAXT365Solution />}
+          path="/NAXT2012-to-NAXT365-product"
+          element={<NAXT2012toNAXT365Solution />}
           />
           <Route
-            path="/Legacy-application-product"
-            element={<LegacyApplication />}
+          path="/Legacy-application-product"
+          element={<LegacyApplication />}
           />
           <Route
-            path="/AX2012-upgrade-product"
-            element={<AX2012UpgradeSolution />}
+          path="/AX2012-upgrade-product"
+          element={<AX2012UpgradeSolution />}
           />
           <Route
-            path="/timesheeet-management-product"
-            element={<TimesheetManagement />}
+          path="/timesheeet-management-product"
+          element={<TimesheetManagement />}
           />
           <Route
-            path="/fixed-assests-stock-product"
-            element={<FixedAssets />}
+          path="/fixed-assests-stock-product"
+          element={<FixedAssets />}
           />
           <Route
-            path="/Azure-devops-project-management-product"
-            element={<AzureDevOps />}
+          path="/Azure-devops-project-management-product"
+          element={<AzureDevOps />}
           /> */}
 
           {/*
            
-            
-            <Route path="/why-us" element={<WhyUs />} />
-            
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            */}
+           
+           <Route path="/why-us" element={<WhyUs />} />
+           
+           <Route path="/login" element={<Login />} />
+           <Route path="/signup" element={<Signup />} />
+           <Route path="/dashboard" element={<Dashboard />} />
+           */}
         </Routes>
         <Footer />
       </Router>

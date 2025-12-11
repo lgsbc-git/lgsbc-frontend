@@ -115,22 +115,33 @@ textarea {
 
 /* NOTIFICATION BAR */
 .notification-bar {
-  position: fixed;
+   position: fixed;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 520px;
-  padding: 14px 18px;
-  border-radius: 12px;
+  right: 20px;
+  min-width: 320px;
+  border-radius: 8px;
+  z-index: 2000;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 999;
-  animation: slideDown 0.3s ease-out;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  padding: 0.8rem;
+  gap: 0.6rem;
+  animation: contact-slideIn 0.3s ease;
+  box-shadow: 0 8px 28px rgba(2,6,23,0.08);
+  /* background-color: ; */
+}
+.notification-bar.success {
+  background: #0f1724;
+  color: #fff;
+  border-left: 6px solid #16a34a;
 }
 
+.notification-bar.error {
+  background: #fff6f6;
+  color: #7f1d1d;
+  border-left: 6px solid #dc2626;
+}
+
+@keyframes contact-slideIn { from { transform: translateX(30%); opacity: 0 } to { transform: translateX(0); opacity: 1 } }
 .notification-title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -139,6 +150,7 @@ textarea {
 .notification-message {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
+  color: white;
 }
 
 /* ICON BOX */

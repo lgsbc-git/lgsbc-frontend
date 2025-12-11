@@ -198,3 +198,12 @@
 .glass-header .nav-links a:hover {
   color: #04c2b4 !important;
 }
+/* ACTIVE NAV LINK */
+.active-nav {
+  color: #04c2b4 !important;
+}
+
+.active-nav::after {
+  width: 100% !important;
+  background: #04c2b4;
+}
