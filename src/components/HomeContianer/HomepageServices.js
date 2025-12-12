@@ -118,8 +118,7 @@ function HomepageServices() {
         </h2>
 
         <p className="services-desc">
-          We deliver intelligent, future-ready solutions designed to help businesses
-          thrive in today's digital era.
+          We deliver intelligent, future-ready solutions designed to help businesses thrive in today's digital and AI era. 
         </p>
 
         <button

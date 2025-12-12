@@ -241,23 +241,19 @@ import iconVision from "../assets/icons/vision.png";
 /* ------------------------------------------------------- */
 import heroBg from "../assets/services/incomplete-puzzle-with-missing-piece.jpg";
 
-
 const About = () => {
   return (
     <div className="about-wrapper">
-
-      <section 
-  className="about-hero"
-  style={{ backgroundImage: `url(${heroBg})` }}
->
-  <div className="about-hero-overlay"></div>
-  <h1>About Us</h1>
-</section>
-
+      <section
+        className="about-hero"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      >
+        <div className="about-hero-overlay"></div>
+        <h1>About Us</h1>
+      </section>
 
       {/* IMAGE + CONTENT SECTION */}
       <section className="about-main">
-
         {/* LEFT IMAGE COLLAGE */}
         <div className="about-image-grid">
           <div className="img-small-top">
@@ -286,16 +282,18 @@ const About = () => {
           </h2>
 
           <p>
-            At LSGTech, we empower businesses to embrace digital transformation 
-            with confidence and clarity. As a trusted technology consulting partner, 
-            we specialize in ERP product and vendor evaluation, Microsoft Dynamics 365 consulting, 
-            data migration, digital marketing, and Azure cloud solutions—helping organizations 
+            At LGSTech, we empower businesses to embrace digital transformation
+            with confidence and clarity. As a trusted technology consulting
+            partner, we specialize in ERP product and vendor evaluation,
+            Microsoft Dynamics 365 consulting, data migration, digital
+            marketing, and Azure cloud solutions—helping organizations
             streamline operations, optimize performance, and accelerate growth.
           </p>
 
           <p>
-            With a team of experienced consultants, strategists, and engineers, we bring deep 
-            industry expertise and a results-driven approach to every project.
+            With a team of experienced consultants, strategists, and engineers,
+            we bring deep industry expertise and a results-driven approach to
+            every project.
           </p>
 
           <Link to="/contact">
@@ -309,8 +307,8 @@ const About = () => {
         <div className="value-stat">
           <h2>150+</h2>
           <p>
-            Microsoft-Certified Technical Consultants Are Just A Call Away To Help You Out,
-            Irresepective Of The Errors Of The Business Solution.
+            Microsoft-Certified Technical Consultants Are Just A Call Away To
+            Help You Out, Irresepective Of The Errors Of The Business Solution.
           </p>
         </div>
 
@@ -319,8 +317,8 @@ const About = () => {
         <div className="value-stat">
           <h2>99%</h2>
           <p>
-            Customer Satisfaction Is The Sole Reason We Have Been Working For 500+ Clients
-            Round The Clock.
+            Customer Satisfaction Is The Sole Reason We Have Been Working For
+            500+ Clients Round The Clock.
           </p>
         </div>
 
@@ -329,8 +327,8 @@ const About = () => {
         <div className="value-stat">
           <h2>14+</h2>
           <p>
-            Years Of Experience Have Taught Us to Resolve Challenging Business Issues,
-            In No Time With 100% Success Rate.
+            Years Of Experience Have Taught Us to Resolve Challenging Business
+            Issues, In No Time With 100% Success Rate.
           </p>
         </div>
       </div>
@@ -344,12 +342,12 @@ const About = () => {
         </h2>
 
         <p className="smv-description">
-          Our Approach Is Simple: Combine Deep Expertise With Forward-Thinking Innovation 
-          To Deliver Solutions That Truly Transform The Way Businesses Operate.
+          Our Approach Is Simple: Combine Deep Expertise With Forward-Thinking
+          Innovation To Deliver Solutions That Truly Transform The Way
+          Businesses Operate.
         </p>
 
         <div className="smv-cards">
-          
           {/* Story */}
           <div className="smv-card">
             <div className="smv-icon">
@@ -357,10 +355,11 @@ const About = () => {
             </div>
             <h3>Our Story</h3>
             <p>
-              LSGTech Was Founded With One Goal — To Bridge The Gap Between Complex 
-        Technology And Real Business Problems. We Saw Companies Struggling To 
-        Choose The Right Systems, Manage Legacy Data, And Adopt Cloud Technologies 
-        Without Disrupting Operations. That’s Where Our Journey Began.
+              LGSTech Was Founded With One Goal — To Bridge The Gap Between
+              Complex Technology And Real Business Problems. We Saw Companies
+              Struggling To Choose The Right Systems, Manage Legacy Data, And
+              Adopt Cloud Technologies Without Disrupting Operations. That’s
+              Where Our Journey Began.
             </p>
           </div>
 
@@ -371,10 +370,11 @@ const About = () => {
             </div>
             <h3>Our Mission</h3>
             <p>
-              Our Focus Is On Empowering Organizations To Become More Agile, Data-Driven, 
-        And Future-Ready. We Achieve This By Combining Deep Industry Expertise With 
-        Cutting-Edge Technologies — Ensuring Every Solution We Deliver Adds Measurable 
-        Value, Enhances Productivity, And Drives Long-Term Growth.
+              Our Focus Is On Empowering Organizations To Become More Agile,
+              Data-Driven, And Future-Ready. We Achieve This By Combining Deep
+              Industry Expertise With Cutting-Edge Technologies — Ensuring Every
+              Solution We Deliver Adds Measurable Value, Enhances Productivity,
+              And Drives Long-Term Growth.
             </p>
           </div>
 
@@ -385,13 +385,13 @@ const About = () => {
             </div>
             <h3>Our Vision</h3>
             <p>
-              Our Goal Is To Continually Push The Boundaries Of Digital Transformation 
-        By Creating Smarter, Faster, And More Connected Business Ecosystems. 
-        Through Continuous Innovation, Unwavering Integrity, And A Commitment 
-        To Client Success, We Aim To Shape A Future Where Technology Is Not Just A Tool.
+              Our Goal Is To Continually Push The Boundaries Of Digital
+              Transformation By Creating Smarter, Faster, And More Connected
+              Business Ecosystems. Through Continuous Innovation, Unwavering
+              Integrity, And A Commitment To Client Success, We Aim To Shape A
+              Future Where Technology Is Not Just A Tool.
             </p>
           </div>
-
         </div>
       </section>
 
@@ -399,7 +399,6 @@ const About = () => {
       <section className="consult-container">
         <ConsultationForm />
       </section>
-
     </div>
   );
 };

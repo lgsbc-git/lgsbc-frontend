@@ -14,8 +14,7 @@ function WhyChoose() {
       <p className="why-subtitle">Why Choose LGSTech?</p>
 
       <h2 className="why-title">
-        Your Trusted Partner In Digital <br />
-        Transformation
+       Your Trusted Partner in Digital and AI-Powered Transformation, and Intelligent Business Process Management
       </h2>
 
       <p className="why-description">
@@ -37,10 +36,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Proven Expertise</h3>
               <p>
-                Leveraging deep expertise in Dynamics 365, Azure cloud,
-                application development, data migration, and enterprise
-                integrations, we deliver strategic insight and technical
-                excellence—helping you build, optimize, and scale your business.
+               Leveraging deep expertise in AI solutions, Dynamics 365, Azure cloud, application development, data migration, and enterprise integrations, we deliver strategic insight and technical excellence—helping you build, optimize, and scale your business. 
               </p>
             </div>
           </div>
@@ -52,9 +48,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Tailored Solutions</h3>
               <p>
-                We recognize that every business operates differently. Our
-                solutions are purpose-built around your goals, workflows, and
-                growth ambitions—not constrained by one-size-fits-all templates.
+                We recognize that every business operates differently. Our solutions are purpose-built around your goals, workflows, and growth ambitions—not constrained by one-size-fits-all templates. 
               </p>
             </div>
           </div>
@@ -74,9 +68,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>End-To-End Support</h3>
               <p>
-                From strategic advisory and implementation to training and
-                continuous optimization, we provide end-to-end support that
-                elevates every stage of your digital transformation journey.
+                From strategic advisory and implementation to training and continuous optimization, we provide end-to-end support that elevates every stage of your AI-Powered digital transformation journey. 
               </p>
             </div>
           </div>
@@ -88,9 +80,7 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Innovation At The Core</h3>
               <p>
-                We lead with innovation—continuously enhancing our strategies
-                and adopting advanced technologies to ensure your business stays
-                modern, agile, and future-ready.
+                We lead with innovation—continuously enhancing our strategies and adopting advanced technologies to ensure your business stays modern, agile, and future-ready to achieve great outcomes for our customers. 
               </p>
             </div>
           </div>

@@ -35,13 +35,13 @@ function AboutLGS() {
 
         <div className="about-stats-card">
           <div className="stat-item">
-            <h3>42k</h3>
-            <p>Completed Work</p>
+            <h3>100+</h3>
+            <p>Solution deployments completed</p>
           </div>
           <div className="divider"></div>
           <div className="stat-item">
-            <h3>58+</h3>
-            <p>Expert Team</p>
+            <h3>30+</h3>
+            <p>Microsoft stack & AI technology experts</p>
           </div>
         </div>
       </div>

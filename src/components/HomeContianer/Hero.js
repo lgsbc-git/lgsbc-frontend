@@ -28,18 +28,18 @@ function Hero() {
 
         <div className="hero-stats">
           <div className="stat">
-            <h2>99%</h2>
-            <p>Strategic Insights</p>
+            <h2>100%</h2>
+            <p>Successful deployments</p>
           </div>
 
           <div className="stat">
-            <h2>4.8</h2>
-            <p>Customer Rating</p>
+            <h2>5</h2>
+            <p>Star in Customer satisfaction  </p>
           </div>
 
           <div className="stat">
-            <h2>2.5M</h2>
-            <p>People Reached</p>
+            <h2>15</h2>
+            <p>Years in Business and thriving  </p>
           </div>
         </div>
 

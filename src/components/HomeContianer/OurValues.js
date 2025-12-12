@@ -10,30 +10,27 @@ function OurValues() {
       {/* ================= TOP BLUE STATS BAR ================= */}
       <div className="values-stats-bar">
         <div className="value-stat">
-          <h2>150+</h2>
+          <h2>10+</h2>
           <p>
-            Microsoft-Certified Technical Consultants Are Just A Call Away To Help You Out,
-            Irresepective Of The Errors Of The Business Solution.
+            Microsoft-Certified Functional and Technical Consultants are just a call away to Help You Out, irrespective of the challenges of your Business applications.
           </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
-          <h2>99%</h2>
+          <h2>100%</h2>
           <p>
-            Customer Satisfaction Is The Sole Reason We Have Been Working For 500+ Clients
-            Round The Clock.
+            Customer Satisfaction is the Sole reason we have been working for 100+ Clients round the clock.
           </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
-          <h2>14+</h2>
+          <h2>15</h2>
           <p>
-            Years Of Experience Have Taught Us to Resolve Challenging Business Issues,
-            In No Time With 100% Success Rate.
+            Years of Experience has Taught Us to Resolve Challenging Business Issues, in No Time with 100% Success Rate. 
           </p>
         </div>
       </div>
@@ -52,7 +49,7 @@ function OurValues() {
           <h2 className="values-heading">
             Driving Innovation Through <br />
             AI And New Technology, <br />
-            Delivering Tailored.
+            Delivering Tailored Solution.
           </h2>
 
           {/* ⭐ UPDATED GRID — ONLY CARDS NOW */}
