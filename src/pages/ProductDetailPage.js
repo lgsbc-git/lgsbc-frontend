@@ -32,7 +32,6 @@ const iconMap = {
   FiSettings: FiIcons.FiSettings,
   FiRefreshCcw: FiIcons.FiRefreshCcw,
   FiPlayCircle: FiIcons.FiPlayCircle,
-  FiTrendingUp: FiIcons.FiTrendingUp,
   FiSearch: FiIcons.FiSearch,
   FiLayers: FiIcons.FiLayers,
   FiPhone: FiIcons.FiPhone,

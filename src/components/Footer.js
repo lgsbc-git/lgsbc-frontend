@@ -41,9 +41,10 @@ function Footer() {
 
   return (
     <footer className="footer-new">
-      {/* TOP FOOTER CONTENT */}
+      {/* TOP CONTENT */}
       <div className="footer-content">
-        {/* LEFT SECTION */}
+        
+        {/* LEFT SIDE */}
         <div className="footer-brand">
           <img src={logo} alt="LGS Tech Logo" className="footer-logo-img" />
 
@@ -56,35 +57,21 @@ function Footer() {
         {/* QUICK LINKS */}
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <a>
-            <Link to="/about">About Us</Link>
-          </a>
-          <a>
-            <Link to="/contact">Contact Us</Link>
-          </a>
-          <a>
-            <Link to="/services">Our Services</Link>
-          </a>
-          <a>
-            <Link to="/blogs">Blog</Link>
-          </a>
-          <a>
-            <Link to="/stories">Stories</Link>
-          </a>
+
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/services">Our Services</Link>
+          <Link to="/blogs">Blog</Link>
+          <Link to="/stories">Stories</Link>
         </div>
 
         {/* SUPPORT */}
         <div className="footer-links">
           <h4>Support</h4>
-          <a>
-            <Link to="/help">Help Centre</Link>
-          </a>
-          <a>
-            <Link to="/terms">Term & Condition</Link>
-          </a>
-          <a>
-            <Link to="/privacy">Privacy Policy</Link>
-          </a>
+
+          <Link to="/help">Help Centre</Link>
+          <Link to="/terms">Terms & Condition</Link>
+          <Link to="/privacy">Privacy Policy</Link>
         </div>
 
         {/* NEWSLETTER */}
@@ -121,7 +108,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* COPYRIGHT BAR */}
+      {/* COPYRIGHT */}
       <div className="footer-bottom-bar">
         Copyright © 2025 LGS Tech | All Rights Reserved
       </div>

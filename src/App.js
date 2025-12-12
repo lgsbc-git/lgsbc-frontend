@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
@@ -34,7 +34,7 @@ import ServicePageDynamic from "./pages/ServicePageDynamic";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import ProductsPage from "./pages/ProductsPage";
 import HelpCenter from "./pages/HelpCenter";
-import Terms from "./pages/Terms";
+// import Terms from "./pages/Terms";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import UnderDevelopment from "./pages/UnderDevelopment";
 import Unsubscribe from "./pages/Unsubscribe";
@@ -51,12 +51,6 @@ import Unsubscribe from "./pages/Unsubscribe";
 // import logo from "../src/assets/primaryLGS_logo/LGS Tech Icon.png"; // adjust relative path
 
 function App() {
-  const [ready, setReady] = useState(false);
-
-  // you can replace this with actual data/load detection if needed
-  const handleFinish = () => {
-    setReady(true);
-  };
 
   return (
     <>
