@@ -265,8 +265,8 @@ const About = () => {
           </div>
 
           <div className="exp-badge">
-            <h2>14+</h2>
-            <p>Year of Experience</p>
+            <h2>15</h2>
+            <p>Years of Experience</p>
           </div>
 
           {/* If you want bottom small image again, uncomment the line below */}

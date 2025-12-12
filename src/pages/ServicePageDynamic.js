@@ -127,12 +127,16 @@ const ServicePageDynamic = () => {
                     </div>
                   </div>
                 );
-                case "comparison-table":
+              case "comparison-table": {
+  const col1 = block.rows.map(r => r[0]); // Industry Norm
+  const col2 = block.rows.map(r => r[1]); // Our Standard
+
   return (
     <div key={idx} className="comparison-table-container">
       {block.title && <h2 className="block-section-title">{block.title}</h2>}
 
-      <table className="comparison-table">
+      {/* DESKTOP TABLE */}
+      <table className="comparison-table desktop-only">
         <thead>
           <tr>
             {block.columns.map((col, cIdx) => (
@@ -140,7 +144,6 @@ const ServicePageDynamic = () => {
             ))}
           </tr>
         </thead>
-
         <tbody>
           {block.rows.map((row, rIdx) => (
             <tr key={rIdx}>
@@ -151,8 +154,33 @@ const ServicePageDynamic = () => {
           ))}
         </tbody>
       </table>
+
+      {/* MOBILE GROUPED VIEW */}
+      <div className="comparison-mobile">
+        
+        <div className="mobile-group">
+          <h3 className="mobile-group-title">{block.columns[0]}</h3>
+          <ul className="mobile-list">
+            {col1.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mobile-group">
+          <h3 className="mobile-group-title">{block.columns[1]}</h3>
+          <ul className="mobile-list">
+            {col2.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
     </div>
   );
+}
+
 
 
               case "paragraph":

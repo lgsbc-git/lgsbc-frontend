@@ -122,9 +122,13 @@
 ================================ */
 @media (max-width: 768px) {
   .services-page-title {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
-  
+  .services-page-hero {
+    
+    padding: 20px 50px;
+    margin-bottom: 40px;
+  }
   .services-page-grid {
     padding: 20px 30px;
   }

@@ -317,3 +317,204 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+/* =====================================================
+   GLOBAL MOBILE TYPE SCALE
+===================================================== */
+@media (max-width: 1200px) {
+  .about-hero h1 {
+    font-size: 3.2rem;
+  }
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* =====================================================
+   HERO RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .about-hero {
+    height: 160px;
+    padding: 40px 10px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    height: 140px;
+    width: auto;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =====================================================
+   MAIN ABOUT SECTION RESPONSIVE
+===================================================== */
+@media (max-width: 1024px) {
+  .about-main {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding: 50px 6%;
+  }
+
+  .about-image-grid,
+  .about-content {
+    width: 100%;
+  }
+
+  .exp-badge {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* =====================================================
+   IMAGE GRID RESPONSIVE
+===================================================== */
+@media (max-width: 768px) {
+  .about-image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .img-small-top,
+  .img-small-bottom,
+  .img-large {
+    height: 220px;
+  }
+
+  .exp-badge {
+    order: -1;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .exp-badge h2 {
+    font-size: 2.4rem;
+  }
+
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .connect-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-small-top,
+  .img-small-bottom,
+  .img-large {
+    height: 180px;
+  }
+
+  .exp-badge {
+    width: 75%;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* =====================================================
+   STATS SECTION RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .stats-section {
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .stat-card p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* =====================================================
+   SMV SECTION RESPONSIVE
+===================================================== */
+@media (max-width: 1100px) {
+  .smv-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  
+/* .about-hero-overlay {
+  width: 90%;
+} */
+  .smv-section {
+    padding: 60px 8%;
+  }
+
+  .smv-cards {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .smv-card {
+    width: auto;
+    padding: 50px 28px 35px;
+    text-align: center;
+  }
+
+  .smv-icon {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .smv-card h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .smv-title {
+    font-size: 2rem;
+  }
+
+  .smv-description {
+    font-size: 0.9rem;
+  }
+
+  .smv-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .smv-card p {
+    font-size: 0.88rem;
+  }
+
+  .smv-icon img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* =====================================================
+   BUTTON RESPONSIVE
+===================================================== */
+@media (max-width: 600px) {
+  .connect-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
