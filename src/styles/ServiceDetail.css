@@ -6,6 +6,7 @@
   background: #f5f7fb;
   padding-bottom: 80px;
   font-family: "Inter", sans-serif;
+  padding-top: 20px;
 }
 
 /* -----------------------------------------------------
@@ -884,7 +885,7 @@
 @media (max-width: 480px) {
   .service-detail-title {
     font-size: 1.6rem;
-    padding: 100px 10px 30px;
+    padding: 0px 10px 30px;
   }
 
   .block-hero-banner {
@@ -999,5 +1000,96 @@
 
   .mobile-list li:last-child {
     border-bottom: none;
+  }
+}
+/* ===========================
+   DESKTOP SIDEBAR (Default)
+=========================== */
+.service-sidebar-desktop {
+  display: block;
+}
+
+/* Hide mobile version on desktop */
+.service-sidebar-mobile {
+  display: none;
+}
+
+/* ===========================
+   MOBILE STYLES
+=========================== */
+@media (max-width: 768px) {
+
+ .service-detail-title {
+    font-size: 1.6rem;
+    padding: 0px 10px 30px;
+  }
+  .service-detail-container{
+    padding-top: 120px !important;
+  }
+  /* Hide desktop sidebar */
+  .service-sidebar-desktop {
+    display: none !important;
+  }
+
+  /* Show mobile dropdown */
+  .service-sidebar-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-sidebar-toggle {
+    width: 100%;
+    background: #00255d;
+    color: #fff;
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service-sidebar-toggle .arrow {
+    transition: 0.3s;
+  }
+
+  .service-sidebar-toggle .arrow.open {
+    transform: rotate(180deg);
+  }
+
+  /* DROPDOWN PANEL */
+  .service-sidebar-dropdown {
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    max-height: 350px;
+    overflow-y: auto;
+  }
+
+  .service-sidebar-dropdown .dropdown-item {
+    display: block;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    color: #2d3a50;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    background-color: #f4f4f480;
+    text-decoration: none;
+  }
+
+  .service-sidebar-dropdown .dropdown-item:hover {
+    background: #e8f6ff;
+    color: #00255d;
+  }
+
+  .service-sidebar-dropdown .dropdown-item.active {
+    background: #00255d;
+    color: white;
+    font-weight: 600;
   }
 }

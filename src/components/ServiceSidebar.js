@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -34,21 +34,61 @@ const services = [
   { name: "Microsoft Dynamics 365 Support Services", slug: "d365-support" },
 ];
 
-const ServiceSidebar = ({ active }) => (
-  <div className="service-sidebar">
-    <h3>Our Services</h3>
+const ServiceSidebar = ({ active }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    {services.map((s) => (
-      <Link
-        key={s.slug}
-        to={`/services/${s.slug}`}
-        style={{ textDecoration: "none" }}
-        onClick={() => window.scrollTo(0, 0)}
-      >
-        <p className={active === s.slug ? "active-service" : ""}>{s.name}</p>
-      </Link>
-    ))}
-  </div>
-);
+  return (
+    <>
+      {/* ========= MOBILE DROPDOWN ========= */}
+      <div className="service-sidebar-mobile">
+        <button
+          className="service-sidebar-toggle"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          Our Services
+          <span className={`arrow ${isOpen ? "open" : ""}`}>▼</span>
+        </button>
+
+        {isOpen && (
+          <div className="service-sidebar-dropdown">
+            {services.map((s) => (
+              <Link
+                key={s.slug}
+                to={`/services/${s.slug}`}
+                className={`dropdown-item ${active === s.slug ? "active" : ""}`}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                {s.name}
+              </Link>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* ========= DESKTOP SIDEBAR ========= */}
+      <div className="service-sidebar-desktop">
+        <div className="service-sidebar">
+          <h3>Our Services</h3>
+
+          {services.map((s) => (
+            <Link
+              key={s.slug}
+              to={`/services/${s.slug}`}
+              style={{ textDecoration: "none" }}
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <p className={active === s.slug ? "active-service" : ""}>
+                {s.name}
+              </p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default ServiceSidebar;

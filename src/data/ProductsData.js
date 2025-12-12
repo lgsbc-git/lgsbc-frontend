@@ -1191,7 +1191,7 @@ export const productsData = {
 }
 
   ,
-  "fixed-assets-stock": {
+  "fixed-assets-stocktake": {
   title: "Fixed Assets Stocktake Solution",
   sidebarActive: "Fixed Assets Stocktake Solution",
   heroImage: fixedAssetsIcon,
@@ -1360,7 +1360,7 @@ export const productsData = {
     }
   ]
 },
-"azure-devops-toolkit": {
+"Azure-devops-project-management": {
   title: "Azure DevOps Toolkit for D365 Project Management",
   sidebarActive: "Azure DevOps Toolkit for D365 Project Management",
   heroImage: azureDevOpsIcon,

@@ -54,7 +54,7 @@ const productsData = [
         name: "Fixed Assets Stocktake Solution",
         logo: fixedAssetsIcon,
         desc: "Audit & reconcile fixed assets using mobile-based inventory checks.",
-        route: "fixed-assests-stock",
+        route: "fixed-assets-stocktake",
       },
     ],
   },

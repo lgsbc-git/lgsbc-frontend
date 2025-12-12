@@ -1429,3 +1429,216 @@
   padding-left: 0;
   margin-left: 80px;
 }
+/* ==========================================================
+   RESPONSIVE FIXES FOR PRODUCT DETAIL PAGE
+   (Keeps desktop EXACTLY same, only improves mobile/tablet)
+========================================================== */
+
+/* ---------- 1. WRAPPER & SIDEBAR ---------- */
+@media (max-width: 992px) {
+  .product-detail-wrapper {
+    flex-direction: column;
+  }
+
+  .product-detail-wrapper aside {
+    width: 100%;
+    min-height: auto;
+    position: static;
+    padding: 24px;
+    text-align: center;
+  }
+}
+
+/* ---------- 2. HERO BANNER ---------- */
+@media (max-width: 768px) {
+  .product-detail-main .block-hero-banner {
+    background-attachment: scroll;
+    padding: 60px 24px;
+    min-height: 350px;
+    text-align: left;
+  }
+
+  .product-detail-main .block-hero-banner h2 {
+    font-size: 2rem;
+  }
+
+  .product-detail-main .block-hero-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-main .block-hero-banner {
+    padding: 40px 20px;
+    min-height: 300px;
+  }
+
+  .product-detail-main .block-hero-banner h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ---------- 3. SECTION TITLES / PARAGRAPHS ---------- */
+@media (max-width: 768px) {
+  .product-detail-main .block-section-title,
+  .product-detail-main .block-paragraph,
+  .product-detail-main .block-bullets,
+  .product-detail-main .block-steps,
+  .product-detail-main .block-highlight,
+  .product-detail-main .block-tiles,
+  .product-detail-main .block-features,
+  .product-detail-main .block-journey {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .product-detail-main .block-section-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-main .block-section-title {
+    font-size: 1.4rem;
+  }
+
+  .product-detail-main .block-paragraph {
+    font-size: 0.92rem;
+  }
+}
+
+/* ---------- 4. BULLETS / STEPS ---------- */
+@media (max-width: 480px) {
+  .product-detail-main .block-bullets li {
+    padding-left: 32px;
+    font-size: 0.95rem;
+  }
+
+  .product-detail-main .block-steps li {
+    padding-left: 55px;
+    font-size: 0.95rem;
+  }
+
+  .product-detail-main .block-steps li::before {
+    width: 36px;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- 5. TILES GRID ---------- */
+@media (max-width: 992px) {
+  .product-detail-main .tiles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .product-detail-main .tiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- 6. FEATURES GRID ---------- */
+@media (max-width: 992px) {
+  .product-detail-main .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .product-detail-main .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- 7. TIMELINE ---------- */
+@media (max-width: 860px) {
+  .timeline-row-inner {
+    grid-template-columns: 1fr !important;
+  }
+
+  .timeline-card {
+    width: 92%;
+    margin: 0 auto;
+    text-align: left !important;
+  }
+
+  .timeline-connector-wrapper,
+  .timeline-vline {
+    display: none;
+  }
+
+  .timeline-row.left .timeline-card,
+  .timeline-row.right .timeline-card {
+    text-align: left;
+  }
+}
+
+/* ---------- 8. CTA BLOCK ---------- */
+@media (max-width: 768px) {
+  .product-detail-main .block-cta {
+    padding: 40px 24px;
+  }
+
+  .product-detail-main .block-cta h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-detail-main .block-cta {
+    padding: 32px 20px;
+  }
+
+  .product-detail-main .block-cta h3 {
+    font-size: 1.35rem;
+  }
+
+  .cta-button {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------- 9. STAGES (vertical process) ---------- */
+@media (max-width: 768px) {
+  .stage-card {
+    flex-direction: column;
+  }
+
+  .stage-left {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .stage-content {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .stage-number {
+    width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------- 10. BULLET TILES GRID ---------- */
+@media (max-width: 600px) {
+  .tiles-bullet-grid {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+  }
+}
+
+/* ---------- 11. FIX FOR OVERFLOW / SPACING ---------- */
+@media (max-width: 480px) {
+  .product-detail-main {
+    overflow-x: hidden;
+  }
+
+  .product-detail-wrapper {
+    gap: 0;
+  }
+}
