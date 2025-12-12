@@ -34,7 +34,11 @@ const iconMap = {
   FiPlayCircle: FiIcons.FiPlayCircle,
   FiTrendingUp: FiIcons.FiTrendingUp,
   FiSearch: FiIcons.FiSearch,
-    FiLayers: FiIcons.FiLayers,
+  FiLayers: FiIcons.FiLayers,
+  FiPhone: FiIcons.FiPhone,
+  FiTablet: FiIcons.FiTablet, 
+
+
 };
 
 const ProductDetailPage = () => {

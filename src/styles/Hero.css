@@ -39,6 +39,7 @@
   align-items: center;
   gap: 18px;
       margin-top: 40px;
+      padding-top: 60px;
 }
 
 /* TITLE */
@@ -158,6 +159,9 @@
     padding: 120px 0 40px;   /* increased top spacing */
     background-size: cover !important;  /* fully cover hero section on mobile */
     background-position: center !important;
+  }
+  .hero-content{
+    padding-top: 0px;
   }
 
   .hero-title {

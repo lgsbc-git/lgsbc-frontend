@@ -1001,239 +1001,531 @@ export const productsData = {
     }
   ]
 },
+"timesheeet-management": {
+  title: "Timesheet Management Solution",
+  sidebarActive: "Timesheet Management Solution",
+  heroImage: timesheetIcon,
+  category: "Power Apps Solutions",
 
-  "timesheeet-management": {
-    title: "Timesheet Management Solution",
-    sidebarActive: "Timesheet Management Solution",
-    heroImage: timesheetIcon,
-    category: "Power Apps Solutions",
-    blocks: [
-      {
-        type: "hero",
-        heading: "Timesheet Management Solution",
-        subheading:
-          "Track time, auto-approve workflows, integrate with billing effortlessly.",
-        button: "Learn More",
-        link: "/timesheeet-management",
-      },
-      {
-        type: "section-title",
-        title: "Overview",
-      },
-      {
-        type: "paragraph",
-        text: "Manage timesheets efficiently with automated tracking, approval workflows, and seamless integration with billing systems using Power Apps.",
-      },
-      {
-        type: "section-title",
-        title: "Key Features",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Automated time tracking",
-          "Configurable approval workflows",
-          "Billing system integration",
-          "Mobile-friendly interface",
-          "Reporting and analytics",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "Benefits",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Increased productivity and accuracy",
-          "Reduced administrative overhead",
-          "Faster billing cycles",
-          "Better project profitability insights",
-          "Compliance with time-tracking standards",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "How It Works",
-      },
-      {
-        type: "steps",
-        steps: [
-          "Setup and configuration",
-          "User training and adoption",
-          "Workflow automation",
-          "Integration with billing",
-          "Monitoring and adjustments",
-        ],
-      },
-      {
-        type: "highlight",
-        bg: "#00255d",
-        textColor: "#ffffff",
-        text: "Streamline your time management with our Power Apps solution.",
-      },
-      {
-        type: "cta",
-        text: "Implement Timesheet Management",
-        button: "Contact Us",
-        link: "/contact",
-      },
-    ],
-  },
-  "fixed-assests-stock": {
-    title: "Fixed Assets Stocktake Solution",
-    sidebarActive: "Fixed Assets Stocktake Solution",
-    heroImage: fixedAssetsIcon,
-    category: "Power Apps Solutions",
-    blocks: [
-      {
-        type: "hero",
-        heading: "Fixed Assets Stocktake Solution",
-        subheading:
-          "Audit & reconcile fixed assets using mobile-based inventory checks.",
-        button: "Learn More",
-        link: "/fixed-assests-stock",
-      },
-      {
-        type: "section-title",
-        title: "Overview",
-      },
-      {
-        type: "paragraph",
-        text: "Conduct efficient fixed asset audits and reconciliations with our mobile-based solution, ensuring accurate inventory management.",
-      },
-      {
-        type: "section-title",
-        title: "Key Features",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Mobile inventory scanning",
-          "Real-time reconciliation",
-          "Barcode and RFID support",
-          "Automated reporting",
-          "Integration with asset management systems",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "Benefits",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Faster and more accurate audits",
-          "Reduced manual errors",
-          "Cost savings on physical inventories",
-          "Improved asset visibility",
-          "Compliance with accounting standards",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "How It Works",
-      },
-      {
-        type: "steps",
-        steps: [
-          "Asset registration and setup",
-          "Mobile app deployment",
-          "Field auditing and scanning",
-          "Data reconciliation and reporting",
-          "Continuous monitoring",
-        ],
-      },
-      {
-        type: "highlight",
-        bg: "#00255d",
-        textColor: "#ffffff",
-        text: "Revolutionize your fixed asset management with mobile technology.",
-      },
-      {
-        type: "cta",
-        text: "Start Your Asset Audit",
-        button: "Contact Us",
-        link: "/contact",
-      },
-    ],
-  },
-  "Azure-devops-project-management": {
-    title: "Azure DevOps Toolkit for D365 Project Management",
-    sidebarActive: "Azure DevOps Toolkit for D365 Project Management",
-    heroImage: azureDevOpsIcon,
-    category: "Azure DevOps Solutions",
-    blocks: [
-      {
-        type: "hero",
-        heading: "Azure DevOps Toolkit for D365 Project Management",
-        subheading:
-          "Integrated pipelines, governance & release orchestration built for Dynamics 365.",
-        button: "Learn More",
-        link: "/Azure-devops-project-management",
-      },
-      {
-        type: "section-title",
-        title: "Overview",
-      },
-      {
-        type: "paragraph",
-        text: "Enhance Dynamics 365 project management with our Azure DevOps Toolkit, featuring integrated pipelines, governance, and release orchestration.",
-      },
-      {
-        type: "section-title",
-        title: "Key Features",
-      },
-      {
-        type: "bullets",
-        items: [
-          "CI/CD pipelines for Dynamics 365",
-          "Automated testing and deployment",
-          "Governance and compliance tools",
-          "Release orchestration",
-          "Integration with Azure services",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "Benefits",
-      },
-      {
-        type: "bullets",
-        items: [
-          "Accelerated development cycles",
-          "Improved code quality and reliability",
-          "Enhanced collaboration",
-          "Reduced deployment risks",
-          "Scalable project management",
-        ],
-      },
-      {
-        type: "section-title",
-        title: "How It Works",
-      },
-      {
-        type: "steps",
-        steps: [
-          "Toolkit setup and configuration",
-          "Pipeline creation and integration",
-          "Governance policy implementation",
-          "Release planning and execution",
-          "Monitoring and optimization",
-        ],
-      },
-      {
-        type: "highlight",
-        bg: "#00255d",
-        textColor: "#ffffff",
-        text: "Power your Dynamics 365 projects with Azure DevOps excellence.",
-      },
-      {
-        type: "cta",
-        text: "Adopt Azure DevOps Toolkit",
-        button: "Contact Us",
-        link: "/contact",
-      },
-    ],
-  },
+  blocks: [
+    // HERO
+    {
+      type: "hero",
+      heading: "Timesheet Management Solution",
+      subheading: "Track time accurately. Automate approvals. Accelerate billing.",
+      button: "Get a custom demo",
+      link: "/contact"
+    },
+
+    // SECTION 1
+    {
+      type: "section-title",
+      title: "Why Modern Timesheet Management Matters"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Manual or disconnected timesheet processes slow down billing, reduce productivity, and create frustration across teams. Organizations need a system that is fast, reliable, compliant, and integrated—without adding admin overhead."
+    },
+    {
+      type: "paragraph",
+      text:
+        "Our Timesheet Management Solution eliminates the delays, errors, and bottlenecks associated with traditional time tracking, giving your teams a smoother, smarter way to manage time."
+    },
+
+    // SECTION 2
+    {
+      type: "section-title",
+      title: "Meeting Today’s Time Tracking Challenges with Smart Solutions"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Employees need simplicity, managers need visibility, and finance needs billing accuracy—and this solution brings all three together. By unifying time capture, automated approvals, and billing integration, it streamlines operations end-to-end. You get precise time tracking across teams and projects, rule-based approvals, real-time utilization insights, seamless billing integration for faster invoicing, and mobile-first access for field and remote teams. Every entry becomes traceable, auditable, and instantly actionable, giving your organization the control and clarity it needs."
+    },
+
+    // SECTION 3 — WHAT YOUR TEAMS GAIN (tiles)
+    {
+      type: "section-title",
+      title: "What Your Teams Gain with Smarter Timesheets"
+    },
+    {
+      type: "paragraph",
+      text: "A modern time-tracking platform designed for accuracy, efficiency, and speed."
+    },
+    {
+      type: "tiles",
+      tiles: [
+        {
+          icon: "FiClipboard",
+          title: "Seamless Time Tracking",
+          description: "Effortless capture of working hours, overtime, and project-wise time."
+        },
+        {
+          icon: "FiRefreshCcw",
+          title: "Automated Approval Workflows",
+          description:
+            "Configurable, rule-based workflows that move timesheets from submission to approval with zero follow-ups."
+        },
+        {
+          icon: "FiLink",
+          title: "Integrated Billing",
+          description:
+            "Sync time entries directly with billing systems for error-free, faster invoicing."
+        },
+        {
+          icon: "FiCloud",
+          title: "Mobile-Ready Experience",
+          description: "Track, submit, and approve timesheets anytime on any device."
+        },
+        {
+          icon: "FiBarChart2",
+          title: "Insightful Analytics",
+          description:
+            "Real-time dashboards for utilization, project progress, and financial insights."
+        }
+      ]
+    },
+
+    // SECTION 4 — Drive Efficiency (bullets)
+    {
+      type: "section-title",
+      title: "Drive Efficiency and Profitability with Better Timesheets"
+    },
+    {
+      type: "paragraph",
+      text:
+        "This solution doesn’t just track hours—it improves your entire project and billing lifecycle."
+    },
+    {
+      type: "bullets",
+      items: [
+        "Higher Productivity with less manual entry and fewer approval delays",
+        "Reduced Administrative Overhead through automation",
+        "Accelerated Billing Cycles powered by clean, synchronized time data",
+        "Improved Project Profitability through real-time insights",
+        "Compliance Confidence with audit-ready time logs"
+      ]
+    },
+    {
+      type: "paragraph",
+      text:
+        "Every hour becomes visible. Every approval becomes faster. Every project becomes more profitable."
+    },
+
+    // SECTION 5 — Setup
+    {
+  type: "section-title",
+  title: "Setting Up Your Timesheet Solution with Ease"
+},
+{
+  type: "paragraph",
+  text: "We designed the process to ensure quick adoption and minimal disruption."
+},
+{
+  type: "timelineAlternate",
+  stages: [
+    {
+      number: 1,
+      icon: "FiSettings",
+      title: "Setup & Configuration",
+      description: "Tailor the solution to your organization’s structure"
+    },
+    {
+      number: 2,
+      icon: "FiUsers",
+      title: "User Training & Adoption",
+      description: "Empower teams with simple, role-based onboarding"
+    },
+    {
+      number: 3,
+      icon: "FiRefreshCcw",
+      title: "Workflow Automation",
+      description: "Implement rules for approvals and notifications"
+    },
+    {
+      number: 4,
+      icon: "FiLink",
+      title: "Billing Integration",
+      description: "Connect timesheets directly to your invoicing process"
+    },
+    {
+      number: 5,
+      icon: "FiTrendingUp",
+      title: "Monitoring & Optimization",
+      description: "Continuously refine based on usage data"
+    }
+  ]
+},
+
+    // SECTION 6 — Trust
+    {
+      type: "section-title",
+      title: "Why Organizations Trust Our Expertise"
+    },
+    {
+      type: "bullets",
+      items: [
+        "15+ years building enterprise-grade business apps",
+        "Deep experience with Power Apps and Microsoft ecosystem",
+        "Proven implementations across services, consulting, and project-driven businesses",
+        "A delivery model focused on speed, quality, and measurable ROI"
+      ]
+    },
+    {
+      type: "paragraph",
+      text:
+        "We don’t just deploy software—we improve how your business tracks time, manages effort, and captures revenue."
+    },
+
+    // CTA FINAL
+    {
+      type: "cta",
+      text: "Ready to Simplify Time Management?",
+      description:
+        "Automate tracking, approvals, and billing—in one unified platform.\nGet faster invoicing, cleaner insights, and higher productivity.",
+      button: "Start Tracking Smarter",
+      link: "/contact"
+    }
+  ]
+}
+
+  ,
+  "fixed-assets-stock": {
+  title: "Fixed Assets Stocktake Solution",
+  sidebarActive: "Fixed Assets Stocktake Solution",
+  heroImage: fixedAssetsIcon,
+  category: "Power Apps Solutions",
+
+  blocks: [
+    // HERO
+    {
+      type: "hero",
+      heading: "Fixed Assets Stocktake Solution",
+      subheading:
+        "Audit, reconcile, and manage fixed assets with speed, accuracy, and mobile automation—reducing costs, improving compliance, and boosting operational efficiency.",
+      button: "Start Your Asset Audit",
+      link: "/contact"
+    },
+
+    // SECTION — Smarter Asset Audits
+    {
+      type: "section-title",
+      title: "Smarter Asset Audits for Better Business Decisions"
+    },
+    {
+      type: "paragraph",
+      text:
+        "When assets go untracked, businesses face unnecessary expenses, compliance headaches, and operational inefficiencies. Manual stocktakes are slow, error-prone, and disruptive. Our solution brings speed, accuracy, and transparency to asset audits. With real-time reconciliation and automated reporting, you can reduce labor costs, optimize utilization, and make smarter investment decisions—turning asset management from a pain point into a competitive advantage."
+    },
+
+    // SECTION — Challenges
+    {
+      type: "section-title",
+      title: "The Challenges Businesses Face"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Tracking assets across multiple locations can be complex and costly. Organizations often struggle with outdated or inaccurate records, time-consuming manual stocktakes, and limited visibility across sites or branches. Staying compliant with accounting and audit requirements adds further pressure, while integrating data with ERP and finance systems can be cumbersome and error-prone."
+    },
+    {
+      type: "paragraph",
+      text:
+        "Our mobile-based Fixed Assets Stocktake Solution addresses these challenges directly, providing real-time reconciliation, automated reporting, and centralized tracking. With full visibility and actionable insights, you can reduce costs, improve compliance, optimize asset utilization, and gain the confidence that every asset is accounted for—no matter where it is."
+    },
+
+    // SECTION — How Our Solution Works (Timeline)
+    {
+      type: "section-title",
+      title: "How Our Solution Works"
+    },
+    {
+      type: "timelineAlternate",
+      stages: [
+        {
+          number: 1,
+          icon: "FiClipboard",
+          title: "Asset Registration & Setup",
+          description: "Catalog all assets and configure the system for your business"
+        },
+        {
+          number: 2,
+          icon: "FiTablet",
+          title: "Mobile App Deployment",
+          description: "Equip teams with scanning tools for efficient field audits"
+        },
+        {
+          number: 3,
+          icon: "FiSearch",
+          title: "Field Auditing & Scanning",
+          description: "Conduct fast, accurate audits across all locations"
+        },
+        {
+          number: 4,
+          icon: "FiBarChart2",
+          title: "Data Reconciliation & Reporting",
+          description: "Instantly detect discrepancies and generate audit-ready reports"
+        },
+        {
+          number: 5,
+          icon: "FiTrendingUp",
+          title: "Continuous Monitoring & Optimization",
+          description: "Keep asset data accurate, current, and actionable"
+        }
+      ]
+    },
+
+    // SECTION — Features (Tiles)
+    {
+      type: "section-title",
+      title: "Key Features That Make a Difference"
+    },
+    {
+      type: "tiles",
+      tiles: [
+        {
+          icon: "FiTablet",
+          title: "Mobile Inventory Scanning",
+          description:
+            "Barcode, QR, and RFID-enabled scanning for fast, accurate audits"
+        },
+        {
+          icon: "FiRefreshCcw",
+          title: "Real-Time Reconciliation",
+          description:
+            "Detect discrepancies instantly and reconcile with accounting systems"
+        },
+        {
+          icon: "FiBarChart2",
+          title: "Automated Reporting",
+          description:
+            "Generate variance and audit-ready reports with minimal effort"
+        },
+        {
+          icon: "FiLink",
+          title: "Integration Ready",
+          description:
+            "Seamless connection with ERP and asset management systems"
+        },
+        {
+          icon: "FiTrendingUp",
+          title: "Continuous Monitoring",
+          description:
+            "Keep asset records current and actionable across all locations"
+        }
+      ]
+    },
+
+    // SECTION — Business Benefits
+    {
+      type: "section-title",
+      title: "The Business Benefits You Will See"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Faster, Accurate Audits – Reduce audit time, eliminate human errors, and free teams for higher-value work",
+        "Lower Operational Costs – Minimize labor, reduce physical inventory expenses, and optimize resource allocation",
+        "Improved Asset Utilization – Full visibility across assets allows strategic redeployment and smarter purchasing decisions",
+        "Regulatory Compliance – Automated audit-ready reports ensure adherence to accounting standards and regulatory requirements",
+        "Data-Driven Decision Making – Reliable asset data enables accurate depreciation, budgeting, and investment planning"
+      ]
+    },
+
+    // SECTION — Why Organizations Trust Us
+    {
+      type: "section-title",
+      title: "Why Organizations Trust Us"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Deep expertise in fixed asset management and mobile auditing",
+        "Proven track record with multi-site, asset-intensive organizations",
+        "Seamless integration with ERP and accounting systems",
+        "Low-risk, predictable deployment with minimal disruption",
+        "Continuous support from setup through optimization, ensuring maximum ROI"
+      ]
+    },
+
+    // CTA
+    {
+      type: "cta",
+      text: "Ready to Automate Asset Tracking?",
+      description:
+        "Revolutionize your fixed asset management with mobile technology. Achieve faster, more accurate audits, reduce costs, maintain compliance, and turn asset visibility into actionable insights.",
+      button: "Take Control of Your Assets",
+      link: "/contact"
+    }
+  ]
+},
+"azure-devops-toolkit": {
+  title: "Azure DevOps Toolkit for D365 Project Management",
+  sidebarActive: "Azure DevOps Toolkit for D365 Project Management",
+  heroImage: azureDevOpsIcon,
+  category: "Azure DevOps Solutions",
+
+  blocks: [
+    // HERO
+    {
+      type: "hero",
+      heading: "Azure DevOps Toolkit for Dynamics 365 Project Management",
+      subheading:
+        "Streamline development, governance, and releases with pre-configured pipelines and policies, enabling faster, safer, and more collaborative project delivery.",
+      button: "Adopt the solution",
+      link: "/contact"
+    },
+
+    // SECTION — Why Teams Struggle Without DevOps
+    {
+      type: "section-title",
+      title: "Why Teams Struggle Without DevOps"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Dynamics 365 projects can quickly get complicated—multiple environments, customizations, and teams all working in parallel. Without structured pipelines and clear governance, deployments slow down, errors creep in, and operational risks rise. That’s where our Azure DevOps Toolkit comes in. It automates repetitive tasks, ensures compliance, and improves code quality, so your team can focus on delivering value. With streamlined pipelines, real-time visibility, and built-in safeguards, you get faster, safer deployments and smoother project delivery every time."
+    },
+
+    // SECTION — Common Project Bottlenecks We Eliminate
+    {
+      type: "section-title",
+      title: "Common Project Bottlenecks We Eliminate"
+    },
+    {
+      type: "paragraph",
+      text:
+        "Manual builds and deployments often introduce errors, while limited visibility into project health and pipeline metrics makes it hard to track progress. Compliance gaps during releases, coordination challenges between developers, testers, and business users, and risky multi-environment deployments without rollback safety further complicate delivery. Our Azure DevOps Toolkit eliminates these pain points, providing your team with structured pipelines, real-time insights, and built-in safeguards—ensuring predictable, secure, and efficient project delivery every time."
+    },
+
+    // SECTION — A Simple, Structured Path to DevOps Success (Timeline)
+    {
+      type: "section-title",
+      title: "A Simple, Structured Path to DevOps Success"
+    },
+    {
+      type: "timelineAlternate",
+      stages: [
+        {
+          number: 1,
+          icon: "FiSettings",
+          title: "Toolkit Setup & Configuration",
+          description: "Install and configure pre-built templates for D365 projects"
+        },
+        {
+          number: 2,
+          icon: "FiPlayCircle",
+          title: "Pipeline Creation & Integration",
+          description:
+            "Automate builds, testing, and deployments across environments"
+        },
+        {
+          number: 3,
+          icon: "FiShield",
+          title: "Governance Policy Implementation",
+          description:
+            "Enforce work item tracking, approvals, and compliance rules"
+        },
+        {
+          number: 4,
+          icon: "FiRefreshCcw",
+          title: "Release Planning & Execution",
+          description:
+            "Streamline multi-environment deployments with rollback safety"
+        },
+        {
+          number: 5,
+          icon: "FiTrendingUp",
+          title: "Monitoring & Optimization",
+          description:
+            "Track project KPIs, build health, and pipeline performance in real time"
+        }
+      ]
+    },
+
+    // SECTION — Capabilities That Accelerate and Secure Your Projects
+    {
+      type: "section-title",
+      title: "Capabilities That Accelerate and Secure Your Projects"
+    },
+    {
+      type: "tiles",
+      tiles: [
+        {
+          icon: "FiRefreshCcw",
+          title: "Automated Pipelines",
+          description: "CI/CD templates optimized for Dynamics 365 development"
+        },
+        {
+          icon: "FiClipboard",
+          title: "Work Item Governance",
+          description:
+            "Link Azure Boards with D365 projects for full visibility and accountability"
+        },
+        {
+          icon: "FiLayers",
+          title: "Release Orchestration",
+          description:
+            "Manage approvals, rollbacks, and multi-environment deployments seamlessly"
+        },
+        {
+          icon: "FiBarChart2",
+          title: "Performance Insights",
+          description:
+            "Real-time dashboards for pipeline metrics, build health, and project KPIs"
+        },
+        {
+          icon: "FiCloud",
+          title: "Azure Integration",
+          description:
+            "Connect effortlessly with Azure services for enhanced automation and analytics"
+        }
+      ]
+    },
+
+    // SECTION — Business Impact
+    {
+      type: "section-title",
+      title: "Business Impact: Deliver Projects Smarter, Faster, Safer"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Accelerated Development Cycles – Reduce build and deployment times, boosting productivity",
+        "Improved Code Quality & Reliability – Automated testing catches errors before release",
+        "Enhanced Team Collaboration – Transparent work item tracking connects developers, testers, and business users",
+        "Reduced Deployment Risks – Rollback safety and structured approvals minimize operational disruptions",
+        "Scalable Project Management – Grow your DevOps processes as projects expand and teams scale"
+      ]
+    },
+
+    // SECTION — Trusted by Dynamics 365 Experts Worldwide
+    {
+      type: "section-title",
+      title: "Trusted by Dynamics 365 Experts Worldwide"
+    },
+    {
+      type: "bullets",
+      items: [
+        "Tailored specifically for Microsoft Dynamics 365 projects",
+        "Pre-configured CI/CD and governance templates to save setup time",
+        "Proven methodology for low-risk deployments",
+        "Real-time insights into project health and operational efficiency",
+        "Continuous support from configuration through optimization"
+      ]
+    },
+
+    // CTA
+    {
+      type: "cta",
+      text: "Take Control of Dynamics 365 Project Delivery Today",
+      description:
+        "Empower your teams to build, deploy, and manage Dynamics 365 projects with confidence. Automate pipelines, enforce governance, and monitor project health in real time—delivering faster, safer, and smarter outcomes for your business.",
+      button: "Talk to a product expert",
+      link: "/contact"
+    }
+  ]
+}
+,
 };
