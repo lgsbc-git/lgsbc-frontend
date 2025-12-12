@@ -282,18 +282,11 @@ const About = () => {
           </h2>
 
           <p>
-            At LGSTech, we empower businesses to embrace digital transformation
-            with confidence and clarity. As a trusted technology consulting
-            partner, we specialize in ERP product and vendor evaluation,
-            Microsoft Dynamics 365 consulting, data migration, digital
-            marketing, and Azure cloud solutions—helping organizations
-            streamline operations, optimize performance, and accelerate growth.
+            At LGSTech, we empower businesses to embrace digital transformation with confidence and clarity. As a trusted technology consulting partner, we specialize in Microsoft Dynamics 365 consulting & implementation services, Power platform adaptation, data migration, digital marketing, and Azure cloud & AI solutions—helping organizations streamline operations, optimize performance, and accelerate growth.  
           </p>
 
           <p>
-            With a team of experienced consultants, strategists, and engineers,
-            we bring deep industry expertise and a results-driven approach to
-            every project.
+           With a team of experienced consultants, strategists, and engineers, we bring deep industry expertise and a results-driven approach to every project.
           </p>
 
           <Link to="/contact">
@@ -302,37 +295,32 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= TOP BLUE STATS BAR ================= */}
       <div className="values-stats-bar">
         <div className="value-stat">
-          <h2>150+</h2>
+          <h2>30+</h2>
           <p>
-            Microsoft-Certified Technical Consultants Are Just A Call Away To
-            Help You Out, Irresepective Of The Errors Of The Business Solution.
+            Microsoft-Certified Functional and Technical Consultants are just a call away to Help You Out, irrespective of the challenges of your Business applications.
           </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
-          <h2>99%</h2>
+          <h2>100%</h2>
           <p>
-            Customer Satisfaction Is The Sole Reason We Have Been Working For
-            500+ Clients Round The Clock.
+            Customer Satisfaction is the Sole reason we have been working for 100+ Clients round the clock.
           </p>
         </div>
 
         <div className="divider"></div>
 
         <div className="value-stat">
-          <h2>14+</h2>
+          <h2>15</h2>
           <p>
-            Years Of Experience Have Taught Us to Resolve Challenging Business
-            Issues, In No Time With 100% Success Rate.
+            Years of Experience has Taught Us to Resolve Challenging Business Issues, in No Time with 100% Success Rate. 
           </p>
         </div>
       </div>
-
       {/* ---------------- STORY | MISSION | VISION ---------------- */}
       <section className="smv-section">
         <p className="smv-top-text">Our Story | Our Mission | Our Vision.</p>

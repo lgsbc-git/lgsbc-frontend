@@ -21,9 +21,7 @@ function Hero() {
         </h1>
 
         <p className="hero-tagline">
-          Transform The Way You Work with Expert-Led Dynamics 365 Consulting,
-          Seamless Data Migration, And Scalable Azure Cloud Solutions — All
-          Tailored to Your Growth.
+          Transform The Way You Work with expert-led Power Platform and Dynamics 365 Consulting & Implementation services, Seamless Data Migration, Scalable Azure Cloud and AI Solutions — All Tailored to Your Growth.
         </p>
 
         <div className="hero-stats">

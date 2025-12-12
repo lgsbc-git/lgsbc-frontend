@@ -10,7 +10,7 @@ function OurValues() {
       {/* ================= TOP BLUE STATS BAR ================= */}
       <div className="values-stats-bar">
         <div className="value-stat">
-          <h2>10+</h2>
+          <h2>30+</h2>
           <p>
             Microsoft-Certified Functional and Technical Consultants are just a call away to Help You Out, irrespective of the challenges of your Business applications.
           </p>
