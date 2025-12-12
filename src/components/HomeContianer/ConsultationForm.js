@@ -128,7 +128,7 @@ function ConsultationForm() {
               <img src={emailIcon} className="consult-icon" alt="email" />
               <div>
                 <h4>Email</h4>
-                <a href="mailto:support@lgstech.ai">support@lgstech.ai</a>
+                <a href="mailto:support@lgsbc.com.au">support@lgsbc.com.au</a>
               </div>
             </div>
 

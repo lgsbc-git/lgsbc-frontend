@@ -3,7 +3,11 @@ import { MapPin, Linkedin, CheckCircle, XCircle, X } from "lucide-react";
 import "../styles/Contact.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [notification, setNotification] = useState({
     show: false,
     message: "",
@@ -50,11 +54,17 @@ const Contact = () => {
         );
         setFormData({ name: "", email: "", message: "" });
       } else {
-        showNotification(data.error || "Something went wrong. Try again.", false);
+        showNotification(
+          data.error || "Something went wrong. Try again.",
+          false
+        );
       }
     } catch (error) {
       console.error(error);
-      showNotification("Oops! Something went wrong. Please try again later.", false);
+      showNotification(
+        "Oops! Something went wrong. Please try again later.",
+        false
+      );
     } finally {
       setIsLoading(false);
     }
@@ -62,11 +72,12 @@ const Contact = () => {
 
   return (
     <section className="contact-section contact-page-root">
-
       {/* CONTACT-SPECIFIC NOTIFICATION (scoped) */}
       {notification.show && (
         <div
-          className={`contact-notification ${notification.isSuccess ? "success" : "error"}`}
+          className={`contact-notification ${
+            notification.isSuccess ? "success" : "error"
+          }`}
         >
           <div className="contact-notification-content">
             {notification.isSuccess ? (
@@ -79,7 +90,9 @@ const Contact = () => {
               <p className="contact-notification-title">
                 {notification.isSuccess ? "Success!" : "Oops!"}
               </p>
-              <p className="contact-notification-message">{notification.message}</p>
+              <p className="contact-notification-message">
+                {notification.message}
+              </p>
             </div>
           </div>
 
@@ -93,13 +106,17 @@ const Contact = () => {
       <h1 className="contact-title">Let’s Connect</h1>
 
       <p className="contact-subtitle">
-        Have questions, ideas, or just want to say hello? Reach us directly or send a quick message below.
+        Have questions, ideas, or just want to say hello? Reach us directly or
+        send a quick message below.
       </p>
 
       {/* FORM CARD */}
-      <div className="contact-card contact-form-card" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        className="contact-card contact-form-card"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2 className="contact-form-heading">Quick Contact Form</h2>
-
 
         <form onSubmit={handleSubmit} className="contact-form">
           <div className="contact-input-group">
@@ -138,70 +155,87 @@ const Contact = () => {
             <label className="contact-label">Your Message</label>
           </div>
 
-          <button type="submit" className="contact-submit-btn" disabled={isLoading}>
+          <button
+            type="submit"
+            className="contact-submit-btn"
+            disabled={isLoading}
+          >
             {isLoading ? <div className="contact-loader" /> : "Send Message"}
           </button>
         </form>
       </div>
 
       {/* ===== CONTACT PAGE CONSULT (scoped classes) ===== */}
-<div className="contact-consult-container">
+      <div className="contact-consult-container">
+        <div className="contact-consult-left">
+          <p className="contact-consult-small">Book a Consultation</p>
 
-  <div className="contact-consult-left">
-    <p className="contact-consult-small">Book a Consultation</p>
+          <h2 className="contact-consult-heading">
+            Ready To Transform Your <br /> Business? Let’s Talk.
+          </h2>
 
-    <h2 className="contact-consult-heading">
-      Ready To Transform Your <br /> Business? Let’s Talk.
-    </h2>
+          <p className="contact-consult-desc">
+            Every great transformation starts with a conversation. At LGSTech,
+            we believe that understanding your goals is the first step to
+            crafting the perfect technology solution.
+          </p>
 
-    <p className="contact-consult-desc">
-      Every great transformation starts with a conversation. At LGSTech,
-      we believe that understanding your goals is the first step to crafting the perfect technology solution.
-    </p>
+          {/* LGSTech.ai (linked to LinkedIn) */}
+          <div className="contact-consult-item">
+            <a
+              href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-consult-link"
+              aria-label="LGSTech LinkedIn"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                gap: "1rem",
+                alignItems: "center",
+              }}
+            >
+              <div className="contact-consult-icon">
+                <Linkedin size={28} />
+              </div>
+              <div>
+                <p className="contact-consult-title">LGSTech.ai</p>
+                <p className="contact-consult-text">View our LinkedIn</p>
+              </div>
+            </a>
+          </div>
 
-    {/* LGSTech.ai (linked to LinkedIn) */}
-    <div className="contact-consult-item">
-      <a
-        href="https://www.linkedin.com/company/lgstech"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="contact-consult-link"
-        aria-label="LGSTech LinkedIn"
-        style={{ textDecoration: "none", display: "flex", gap: "1rem", alignItems: "center" }}
-      >
-        <div className="contact-consult-icon">
-          <Linkedin size={28} />
+          {/* Email (mailto link) */}
+          <div className="contact-consult-item">
+            <div className="contact-consult-icon" aria-hidden="true">
+              @
+            </div>
+            <div>
+              <p className="contact-consult-title">Email</p>
+              <p className="contact-consult-text">
+                <a
+                  href="mailto:support@lgsbc.com.au"
+                  className="contact-email-link"
+                >
+                  support@lgsbc.com.au
+                </a>
+              </p>
+            </div>
+          </div>
+
+          {/* Location (unchanged) */}
+          <div className="contact-consult-item">
+            <div className="contact-consult-icon">
+              <MapPin size={28} />
+            </div>
+            <div>
+              <p className="contact-consult-title">Location</p>
+              <p className="contact-consult-text">
+                457 Upper Edward Street, Spring Hill, QLD - 4000
+              </p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p className="contact-consult-title">LGSTech.ai</p>
-          <p className="contact-consult-text">View our LinkedIn</p>
-        </div>
-      </a>
-    </div>
-
-    {/* Email (mailto link) */}
-    <div className="contact-consult-item">
-      <div className="contact-consult-icon" aria-hidden="true">@</div>
-      <div>
-        <p className="contact-consult-title">Email</p>
-        <p className="contact-consult-text">
-          <a href="mailto:support@lgstech.ai" className="contact-email-link">
-            support@lgstech.ai
-          </a>
-        </p>
-      </div>
-    </div>
-
-    {/* Location (unchanged) */}
-    <div className="contact-consult-item">
-      <div className="contact-consult-icon"><MapPin size={28} /></div>
-      <div>
-        <p className="contact-consult-title">Location</p>
-        <p className="contact-consult-text">
-457 Upper Edward Street, Spring Hill, QLD - 4000</p>
-      </div>
-    </div>
-  </div>
 
         <div className="contact-consult-map">
           <iframe
@@ -213,7 +247,6 @@ const Contact = () => {
             loading="lazy"
           ></iframe>
         </div>
-
       </div>
     </section>
   );

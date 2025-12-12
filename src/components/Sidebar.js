@@ -93,7 +93,7 @@ const Sidebar = ({ darkMode }) => {
       </div>
 
       <nav className="sidebar-links">
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+        <a href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="sidebar-link">
           <span>LINKEDIN</span>
         </a>
 

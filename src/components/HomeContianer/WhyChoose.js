@@ -14,7 +14,7 @@ function WhyChoose() {
       <p className="why-subtitle">Why Choose LGSTech?</p>
 
       <h2 className="why-title">
-       Your Trusted Partner in Digital and AI-Powered Transformation, and Intelligent Business Process Management
+       Your Trusted Partner in Digital and<br></br> AI-Powered Transformation, <br></br> and Intelligent Business Process Management
       </h2>
 
       <p className="why-description">

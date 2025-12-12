@@ -2,56 +2,36 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/HomepageServices.css";
 
-import serviceImg from "../../assets/home/ERP Vendor Evaluation.jpg";
+// 👉 IMPORT SEPARATE IMAGES FOR EACH SERVICE
+import consultingImg from "../../assets/home/6183625.jpg";
+import powerPlatformImg from "../../assets/home/22246.jpg";
+import dataMigrationImg from "../../assets/home/Wavy_Tech-28_Single-07.jpg";
 
 // ------------------------------------
-// FULL SERVICE LIST (from your message)
+// UPDATED SERVICE LIST (ONLY 3 SERVICES)
+// EACH WITH SEPARATE IMAGE + LINK
 // ------------------------------------
 const servicesData = [
   {
-    title: "ERP Vendor Evaluation",
-    desc:
-      "We help businesses select the right ERP vendor by assessing stability, implementation expertise, customer support, cost transparency and alignment with long-term goals. This ensures a reliable partnership with minimal risks.",
-  },
-  {
-    title: "ERP Product Evaluation",
-    desc:
-      "Our ERP Product Evaluation service systematically analyzes ERP solutions to identify the best fit for your business. We assess features, scalability, usability, cost and vendor reliability for informed decision-making.",
-  },
-  {
-    title: "Dynamics 365 Readiness Assessment",
-    desc:
-      "We evaluate your organization’s readiness for Dynamics 365 adoption by assessing technology landscape, people, change management and support services. Result is a tailored readiness dashboard and consulting report.",
-  },
-  {
-    title: "Dynamics 365 Consulting Services",
+    title: "Microsoft Dynamics 365 Consulting Services",
     desc:
       "Our Dynamics 365 experts provide consulting across Finance, SCM, Sales, and more. We ensure scalability, security and tailored solutions to maximize ROI from ERP investments.",
+    img: consultingImg,
+    link: "/services/dynamics365-consulting",
   },
   {
-    title: "Dynamics 365 Development Services",
+    title: "Microsoft Power Platform Development & Training",
     desc:
-      "We provide custom development & extensions for D365, using Azure DevOps automation to ensure reliable delivery and maintainability.",
-  },
-  {
-    title: "Dynamics 365 Implementation Services",
-    desc:
-      "From project initiation to deployment, we handle end-to-end D365 implementations including configuration, ISV integration, testing & training.",
-  },
-  {
-    title: "Dynamics 365 Program & Project Management",
-    desc:
-      "We provide program & project management using Agile DevOps frameworks ensuring on-time delivery aligned with business goals.",
-  },
-  {
-    title: "Microsoft Power Platform Development",
-    desc:
-      "We design PowerApps, Automations & PowerBI dashboards that streamline processes and enable data-driven decisions.",
+      "We design and implement PowerApps, Automations, and PowerBI dashboards that help businesses streamline processes and make data-driven decisions. Training ensures your teams can maximize platform potential.",
+    img: powerPlatformImg,
+    link: "/services/power-platform",
   },
   {
     title: "Data Migration Services",
     desc:
-      "We automate ETL processes ensuring accurate migration to Dynamics 365 with minimal downtime and maximum reliability.",
+      "Our data migration services automate ETL processes, ensuring smooth transfer of data to Dynamics 365. With strategies for accuracy, consistency, and scalability, we reduce downtime and risks in migration projects.",
+    img: dataMigrationImg,
+    link: "/services/data-migration",
   },
 ];
 
@@ -85,19 +65,19 @@ function HomepageServices() {
             position = "left";
 
           return (
-            <div
-              key={index}
-              className={`service-card ${position}`}
-            >
-              <img src={serviceImg} alt={service.title} className="service-img" />
+            <div key={index} className={`service-card ${position}`}>
+              
+              {/* Dynamic Image */}
+              <img src={service.img} alt={service.title} className="service-img" />
 
               <div className="service-content">
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
 
+                {/* Dynamic Button Link */}
                 <button
                   className="service-btn"
-                  onClick={() => navigate("/services")}
+                  onClick={() => navigate(service.link)}
                 >
                   View More
                 </button>
@@ -118,13 +98,10 @@ function HomepageServices() {
         </h2>
 
         <p className="services-desc">
-          We deliver intelligent, future-ready solutions designed to help businesses thrive in today's digital and AI era. 
+          We deliver intelligent, future-ready solutions designed to help businesses thrive in today's digital and AI era.
         </p>
 
-        <button
-          className="services-btn"
-          onClick={() => navigate("/services")}
-        >
+        <button className="services-btn" onClick={() => navigate("/services")}>
           View More
         </button>
       </div>

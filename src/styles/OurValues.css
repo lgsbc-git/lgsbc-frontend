@@ -34,9 +34,9 @@
 }
 
 .divider {
-  width: 2px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.7);
+     width: 2px;
+    height: 100px;
+    background: rgb(199 190 190 / 70%);
 }
 
 /* ===============================

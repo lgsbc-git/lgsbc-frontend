@@ -5,7 +5,6 @@ import "../styles/Header.css";
 // Logos
 import homeLogo from "../assets/primary/lgstechlogo-withoutbg-bw.png";
 
-
 import lightLogo from "../assets/primary/lgstechlogo-withoutbg-gradientcolor.png";
 
 function Header() {
@@ -18,7 +17,6 @@ function Header() {
   const location = useLocation();
 
   const isHome = location.pathname === "/" || location.pathname === "/about";
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,12 +82,40 @@ function Header() {
 
       <div className="nav-container">
         <nav className="nav-links">
-         <Link to="/" className={location.pathname === "/" ? "active-nav" : ""}>Home</Link>
-<Link to="/about" className={location.pathname === "/about" ? "active-nav" : ""}>About Us</Link>
-<Link to="/services" className={location.pathname.startsWith("/services") ? "active-nav" : ""}>Our Services</Link>
-<Link to="/products" className={location.pathname.startsWith("/products") ? "active-nav" : ""}>Products</Link>
-<Link to="/contact" className={location.pathname === "/contact" ? "active-nav" : ""}>Contact Us</Link>
-
+          <Link
+            to="/"
+            className={location.pathname === "/" ? "active-nav" : ""}
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className={location.pathname === "/about" ? "active-nav" : ""}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/services"
+            className={
+              location.pathname.startsWith("/services") ? "active-nav" : ""
+            }
+          >
+            Our Services
+          </Link>
+          <Link
+            to="/products"
+            className={
+              location.pathname.startsWith("/products") ? "active-nav" : ""
+            }
+          >
+            Products
+          </Link>
+          <Link
+            to="/contact"
+            className={location.pathname === "/contact" ? "active-nav" : ""}
+          >
+            Contact Us
+          </Link>
         </nav>
 
         <div className="menu-icon" onClick={toggleMenu}>
@@ -101,14 +127,54 @@ function Header() {
 
       {(isMenuOpen || closingMenu) && (
         <div className={`menu-overlay ${closingMenu ? "closing" : "opening"}`}>
-          <div className="close-icon" onClick={toggleMenu}>&times;</div>
+          <div className="close-icon" onClick={toggleMenu}>
+            &times;
+          </div>
 
           <ul className="overlay-links">
-            <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
-            <li><Link to="/about" onClick={handleLinkClick}>About Us</Link></li>
-            <li><Link to="/services" onClick={handleLinkClick}>Our Services</Link></li>
-            <li><Link to="/products" onClick={handleLinkClick}>Products</Link></li>
-            <li><Link to="/contact" onClick={handleLinkClick}>Contact Us</Link></li>
+            <li>
+              <Link to="/" onClick={handleLinkClick}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={handleLinkClick}>
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" onClick={handleLinkClick}>
+                Our Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" onClick={handleLinkClick}>
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={handleLinkClick}>
+                Contact Us
+              </Link>
+            </li>
+
+            {/* NEW LINKS */}
+            <li>
+              <Link to="/blogs" onClick={handleLinkClick}>
+                Blogs
+              </Link>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleLinkClick}
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       )}
