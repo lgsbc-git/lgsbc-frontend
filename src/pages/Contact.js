@@ -175,19 +175,19 @@ const Contact = () => {
           </h2>
 
           <p className="contact-consult-desc">
-            Every great transformation starts with a conversation. At LGSTech,
-            we believe that understanding your goals is the first step to
-            crafting the perfect technology solution.
+            Every great transformation starts with a conversation. At LGS, we
+            believe that understanding your goals is the first step to crafting
+            the perfect technology solution.
           </p>
 
-          {/* LGSTech.ai (linked to LinkedIn) */}
+          {/* LGS.ai (linked to LinkedIn) */}
           <div className="contact-consult-item">
             <a
               href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-consult-link"
-              aria-label="LGSTech LinkedIn"
+              aria-label="LGS LinkedIn"
               style={{
                 textDecoration: "none",
                 display: "flex",
@@ -199,7 +199,7 @@ const Contact = () => {
                 <Linkedin size={28} />
               </div>
               <div>
-                <p className="contact-consult-title">LGSTech.ai</p>
+                <p className="contact-consult-title">LGSBC</p>
                 <p className="contact-consult-text">View our LinkedIn</p>
               </div>
             </a>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
-import logo from "../assets/primary/lgstechlogo-withoutbg-bw.png";
+import logo from "../assets/primary/LGSBC_logo.png";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -43,13 +43,12 @@ function Footer() {
     <footer className="footer-new">
       {/* TOP CONTENT */}
       <div className="footer-content">
-        
         {/* LEFT SIDE */}
         <div className="footer-brand">
           <img src={logo} alt="LGS Tech Logo" className="footer-logo-img" />
 
           <p className="footer-brand-text">
-            At LGSTech, We Believe Technology Should Simplify Complexity <br />
+            At LGS, We Believe Technology Should Simplify Complexity <br />
             And Drive Growth Not Slow It Down.
           </p>
         </div>
@@ -110,7 +109,7 @@ function Footer() {
 
       {/* COPYRIGHT */}
       <div className="footer-bottom-bar">
-        Copyright © 2025 LGS Tech | All Rights Reserved
+        Copyright © 2025 LGS | All Rights Reserved
       </div>
     </footer>
   );

@@ -3,8 +3,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Sidebar.css";
 
-import logoLight from "../assets/primary/lgstechlogo-withoutbg-gradientcolor.png";
-import logoDark from "../assets/primary/lgstechlogo-withoutbg-bw.png";
+import logoLight from "../assets/primary/LGS_logo_only.png";
+import logoDark from "../assets/primary/LGS_logo_only.png";
 
 import ScrollToTop from "./ScrollToTop";
 
@@ -43,7 +43,9 @@ const Sidebar = ({ darkMode }) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const bgColor = window.getComputedStyle(entry.target).backgroundColor;
+            const bgColor = window.getComputedStyle(
+              entry.target
+            ).backgroundColor;
             const rgb = bgColor.match(/\d+/g);
 
             if (rgb) {
@@ -54,8 +56,8 @@ const Sidebar = ({ darkMode }) => {
 
               const isDark = brightness < 130;
 
-              setUseDarkLogo(isDark);     // white logo
-              setUseDarkText(isDark);     // white links
+              setUseDarkLogo(isDark); // white logo
+              setUseDarkText(isDark); // white links
             }
           }
         });
@@ -74,26 +76,42 @@ const Sidebar = ({ darkMode }) => {
   const sidebarTheme = darkMode ? "sidebar-dark" : "sidebar-light";
 
   return (
-    <div className={`sidebar ${sidebarTheme} ${useDarkText ? "sidebar-text-dark" : "sidebar-text-light"}`}>
-      
-      <div className={`sidebar_logo-wrapper ${logoVisible ? "show-logo" : "hide-logo"}`}>
+    <div
+      className={`sidebar ${sidebarTheme} ${
+        useDarkText ? "sidebar-text-dark" : "sidebar-text-light"
+      }`}
+    >
+      <div
+        className={`sidebar_logo-wrapper ${
+          logoVisible ? "show-logo" : "hide-logo"
+        }`}
+      >
         <Link to="/">
           <img
             src={logoLight}
             alt="Light Logo"
-            className={`sidebar_logo ${useDarkLogo ? "hidden-logo" : "visible-logo"}`}
+            className={`sidebar_logo ${
+              useDarkLogo ? "hidden-logo" : "visible-logo"
+            }`}
           />
 
           <img
             src={logoDark}
             alt="Dark Logo"
-            className={`sidebar_logo ${useDarkLogo ? "visible-logo" : "hidden-logo"}`}
+            className={`sidebar_logo ${
+              useDarkLogo ? "visible-logo" : "hidden-logo"
+            }`}
           />
         </Link>
       </div>
 
       <nav className="sidebar-links">
-        <a href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="sidebar-link">
+        <a
+          href="https://www.linkedin.com/company/lgs-business-consulting/?viewAsMember=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sidebar-link"
+        >
           <span>LINKEDIN</span>
         </a>
 

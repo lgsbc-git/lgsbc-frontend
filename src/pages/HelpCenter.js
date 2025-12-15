@@ -6,7 +6,7 @@ function HelpCenter() {
     <div className="page help-center">
       <h1>Help Center</h1>
       <p>
-        Welcome to the LGSTech Help Center. Here you’ll find answers to common
+        Welcome to the LGS Help Center. Here you’ll find answers to common
         questions about our services and solutions.
       </p>
 
@@ -15,8 +15,8 @@ function HelpCenter() {
         <h3>What is ERP Product Evaluation?</h3>
         <p>
           ERP Product Evaluation is the process of systematically analysing and
-          comparing different ERP software solutions to determine which best fits
-          the needs of an organization. It helps ensure scalability, cost
+          comparing different ERP software solutions to determine which best
+          fits the needs of an organization. It helps ensure scalability, cost
           efficiency, and long-term success.
         </p>
 
@@ -33,8 +33,8 @@ function HelpCenter() {
         <h3>What is Data Migration?</h3>
         <p>
           Data migration is the process of transferring data between systems.
-          LGSTech uses automation, mapping, and integrity checks to ensure
-          accurate and secure migration.
+          LGS uses automation, mapping, and integrity checks to ensure accurate
+          and secure migration.
         </p>
 
         <h3>What is a Dynamics 365 Readiness Assessment?</h3>
@@ -55,7 +55,7 @@ function HelpCenter() {
       <section>
         <h2>Common Issues</h2>
         <p>
-          <strong>Q:</strong> Can LGSTech integrate Microsoft Power Platform and
+          <strong>Q:</strong> Can LGS integrate Microsoft Power Platform and
           Dynamics 365? <br />
           <strong>A:</strong> Yes. We provide PowerApps, PowerAutomate, and
           PowerBI integration with D365 for end-to-end business automation and
@@ -63,7 +63,7 @@ function HelpCenter() {
         </p>
 
         <p>
-          <strong>Q:</strong> How does LGSTech ensure data security? <br />
+          <strong>Q:</strong> How does LGS ensure data security? <br />
           <strong>A:</strong> We use encryption (TLS 1.2+), BYOK, Data Loss
           Prevention (DLP), and advanced monitoring with Microsoft Defender.
         </p>

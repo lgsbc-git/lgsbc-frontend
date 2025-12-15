@@ -80,7 +80,7 @@
 
 //         {/* Intro */}
 //         <p className="about-intro" >
-//           At LGSTech we empower businesses with strategic insights, digital
+//           At LGS we empower businesses with strategic insights, digital
 //           transformation and Microsoft Dynamics 365 solutions. Our mission is
 //           to simplify complexity, drive efficiency and help organizations
 //           achieve sustainable growth.
@@ -282,11 +282,18 @@ const About = () => {
           </h2>
 
           <p>
-            At LGSTech, we empower businesses to embrace digital transformation with confidence and clarity. As a trusted technology consulting partner, we specialize in Microsoft Dynamics 365 consulting & implementation services, Power platform adaptation, data migration, digital marketing, and Azure cloud & AI solutions—helping organizations streamline operations, optimize performance, and accelerate growth.  
+            At LGS, we empower businesses to embrace digital transformation with
+            confidence and clarity. As a trusted technology consulting partner,
+            we specialize in Microsoft Dynamics 365 consulting & implementation
+            services, Power platform adaptation, data migration, digital
+            marketing, and Azure cloud & AI solutions—helping organizations
+            streamline operations, optimize performance, and accelerate growth.
           </p>
 
           <p>
-           With a team of experienced consultants, strategists, and engineers, we bring deep industry expertise and a results-driven approach to every project.
+            With a team of experienced consultants, strategists, and engineers,
+            we bring deep industry expertise and a results-driven approach to
+            every project.
           </p>
 
           <Link to="/contact">
@@ -299,7 +306,9 @@ const About = () => {
         <div className="value-stat">
           <h2>30+</h2>
           <p>
-            Microsoft-Certified Functional and Technical Consultants are just a call away to Help You Out, irrespective of the challenges of your Business applications.
+            Microsoft-Certified Functional and Technical Consultants are just a
+            call away to Help You Out, irrespective of the challenges of your
+            Business applications.
           </p>
         </div>
 
@@ -308,7 +317,8 @@ const About = () => {
         <div className="value-stat">
           <h2>100%</h2>
           <p>
-            Customer Satisfaction is the Sole reason we have been working for 100+ Clients round the clock.
+            Customer Satisfaction is the Sole reason we have been working for
+            100+ Clients round the clock.
           </p>
         </div>
 
@@ -317,7 +327,8 @@ const About = () => {
         <div className="value-stat">
           <h2>15</h2>
           <p>
-            Years of Experience has Taught Us to Resolve Challenging Business Issues, in No Time with 100% Success Rate. 
+            Years of Experience has Taught Us to Resolve Challenging Business
+            Issues, in No Time with 100% Success Rate.
           </p>
         </div>
       </div>
@@ -343,11 +354,11 @@ const About = () => {
             </div>
             <h3>Our Story</h3>
             <p>
-              LGSTech Was Founded With One Goal — To Bridge The Gap Between
-              Complex Technology And Real Business Problems. We Saw Companies
-              Struggling To Choose The Right Systems, Manage Legacy Data, And
-              Adopt Cloud Technologies Without Disrupting Operations. That’s
-              Where Our Journey Began.
+              LGS Was Founded With One Goal — To Bridge The Gap Between Complex
+              Technology And Real Business Problems. We Saw Companies Struggling
+              To Choose The Right Systems, Manage Legacy Data, And Adopt Cloud
+              Technologies Without Disrupting Operations. That’s Where Our
+              Journey Began.
             </p>
           </div>
 

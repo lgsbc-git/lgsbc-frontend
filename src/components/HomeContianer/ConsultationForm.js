@@ -118,9 +118,9 @@ function ConsultationForm() {
           </h2>
 
           <p className="consult-desc">
-            Every great transformation starts with a conversation. At LGSTech,
-            we believe that understanding your goals is the first step to
-            crafting the perfect technology solution.
+            Every great transformation starts with a conversation. At LGS, we
+            believe that understanding your goals is the first step to crafting
+            the perfect technology solution.
           </p>
 
           <div className="consult-info">

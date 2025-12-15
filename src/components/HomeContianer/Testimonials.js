@@ -6,19 +6,19 @@ function Testimonials() {
   const testimonials = [
     {
       rating: 5,
-      text: "LGSTech helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
+      text: "LGS helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
       name: "Mark Robinson",
       role: "CEO | TechFlow Systems",
     },
     {
       rating: 5,
-      text: "LGSTech helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
+      text: "LGS helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
       name: "Mark Robinson",
       role: "CEO | TechFlow Systems",
     },
     {
       rating: 4,
-      text: "LGSTech helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
+      text: "LGS helped us streamline our ERP evaluation and guided us in selecting the perfect solution for our operations. Their expertise and transparency made the entire process seamless.",
       name: "Mark Robinson",
       role: "CEO | TechFlow Systems",
     },

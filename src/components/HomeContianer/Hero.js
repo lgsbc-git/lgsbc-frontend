@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/Hero.css";
-import heroBg from "../../assets/home/hero-section-background.webp";
 
 function Hero() {
   const navigate = useNavigate();
@@ -9,19 +8,20 @@ function Hero() {
   return (
     <section
       className="hero-section"
-      style={{ backgroundImage: `url(${heroBg})` }}
+      style={{ backgroundImage: `url(/hero-section-background.webp)` }}
     >
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
-
         <h1 className="hero-title">
           Empowering Businesses With Intelligent <br />
           Business Applications & Cloud Solutions
         </h1>
 
         <p className="hero-tagline">
-          Transform The Way You Work with expert-led Power Platform and Dynamics 365 Consulting & Implementation services, Seamless Data Migration, Scalable Azure Cloud and AI Solutions — All Tailored to Your Growth.
+          Transform The Way You Work with expert-led Power Platform and Dynamics
+          365 Consulting & Implementation services, Seamless Data Migration,
+          Scalable Azure Cloud and AI Solutions — All Tailored to Your Growth.
         </p>
 
         <div className="hero-stats">
@@ -32,12 +32,12 @@ function Hero() {
 
           <div className="stat">
             <h2>5</h2>
-            <p>Star in Customer satisfaction  </p>
+            <p>Star in Customer satisfaction </p>
           </div>
 
           <div className="stat">
             <h2>15</h2>
-            <p>Years in Business and thriving  </p>
+            <p>Years in Business and thriving </p>
           </div>
         </div>
 

@@ -11,7 +11,7 @@ function AboutLGS() {
   return (
     <section className="aboutlgs-section">
       <div className="about-left">
-        <p className="aboutlgs-subtitle">About LGSTech</p>
+        <p className="aboutlgs-subtitle">About LGS</p>
 
         <h2 className="aboutlgs-title">
           Empowering Businesses through <br />
@@ -20,7 +20,7 @@ function AboutLGS() {
         </h2>
 
         <p className="aboutlgs-desc">
-          At LGSTech, We Believe Technology Should Simplify Complexity and Drive
+          At LGS, We Believe Technology Should Simplify Complexity and Drive
           Growth, Not Slow It Down.
         </p>
         <button className="about-btn" onClick={() => navigate("/about")}>

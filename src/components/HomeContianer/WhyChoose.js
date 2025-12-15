@@ -11,15 +11,16 @@ function WhyChoose() {
   return (
     <section className="why-section">
       {/* ===== TOP TEXT ===== */}
-      <p className="why-subtitle">Why Choose LGSTech?</p>
+      <p className="why-subtitle">Why Choose LGS?</p>
 
       <h2 className="why-title">
-       Your Trusted Partner in Digital and<br></br> AI-Powered Transformation, <br></br> and Intelligent Business Process Management
+        Your Trusted Partner in Digital and<br></br> AI-Powered Transformation,{" "}
+        <br></br> and Intelligent Business Process Management
       </h2>
 
       <p className="why-description">
         In a world where technology evolves faster than ever, choosing the right
-        partner makes all the difference. At LGSTech, we go beyond delivering
+        partner makes all the difference. At LGS, we go beyond delivering
         solutions — we deliver success. Our approach blends innovation,
         expertise, and integrity to help your business stay ahead in a
         competitive landscape.
@@ -36,7 +37,10 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Proven Expertise</h3>
               <p>
-               Leveraging deep expertise in AI solutions, Dynamics 365, Azure cloud, application development, data migration, and enterprise integrations, we deliver strategic insight and technical excellence—helping you build, optimize, and scale your business. 
+                Leveraging deep expertise in AI solutions, Dynamics 365, Azure
+                cloud, application development, data migration, and enterprise
+                integrations, we deliver strategic insight and technical
+                excellence—helping you build, optimize, and scale your business.
               </p>
             </div>
           </div>
@@ -48,7 +52,9 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Tailored Solutions</h3>
               <p>
-                We recognize that every business operates differently. Our solutions are purpose-built around your goals, workflows, and growth ambitions—not constrained by one-size-fits-all templates. 
+                We recognize that every business operates differently. Our
+                solutions are purpose-built around your goals, workflows, and
+                growth ambitions—not constrained by one-size-fits-all templates.
               </p>
             </div>
           </div>
@@ -68,7 +74,10 @@ function WhyChoose() {
             <div className="why-info">
               <h3>End-To-End Support</h3>
               <p>
-                From strategic advisory and implementation to training and continuous optimization, we provide end-to-end support that elevates every stage of your AI-Powered digital transformation journey. 
+                From strategic advisory and implementation to training and
+                continuous optimization, we provide end-to-end support that
+                elevates every stage of your AI-Powered digital transformation
+                journey.
               </p>
             </div>
           </div>
@@ -80,7 +89,10 @@ function WhyChoose() {
             <div className="why-info">
               <h3>Innovation At The Core</h3>
               <p>
-                We lead with innovation—continuously enhancing our strategies and adopting advanced technologies to ensure your business stays modern, agile, and future-ready to achieve great outcomes for our customers. 
+                We lead with innovation—continuously enhancing our strategies
+                and adopting advanced technologies to ensure your business stays
+                modern, agile, and future-ready to achieve great outcomes for
+                our customers.
               </p>
             </div>
           </div>
@@ -89,7 +101,7 @@ function WhyChoose() {
 
       {/* BOTTOM TAGLINE */}
       <p className="why-bottom-tagline">
-        Choose Innovation. Choose Reliability. Choose LGSTech.
+        Choose Innovation. Choose Reliability. Choose LGS.
       </p>
     </section>
   );

@@ -8,7 +8,7 @@ function PrivacyPolicy() {
       <p>Last Updated: September 2025</p>
 
       <p>
-        At <strong>LGSTech</strong>, we respect your privacy and are committed to
+        At <strong>LGS</strong>, we respect your privacy and are committed to
         protecting your personal information. This policy explains what data we
         collect, how we use it, and your rights.
       </p>
