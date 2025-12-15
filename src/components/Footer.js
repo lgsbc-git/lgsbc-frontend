@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
-import logo from "../assets/primary/LGSBC_logo.png";
+import logo from "../assets/primary/lgs_logo_white.png";
 
 function Footer() {
   const [email, setEmail] = useState("");
