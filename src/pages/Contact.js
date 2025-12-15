@@ -199,7 +199,7 @@ const Contact = () => {
                 <Linkedin size={28} />
               </div>
               <div>
-                <p className="contact-consult-title">LGSBC</p>
+                <p className="contact-consult-title">LGS</p>
                 <p className="contact-consult-text">View our LinkedIn</p>
               </div>
             </a>
