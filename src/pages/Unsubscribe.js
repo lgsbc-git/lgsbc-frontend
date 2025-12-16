@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../config/api";
 import '../styles/Unsubscribe.css';
 import { MdError } from "react-icons/md";
 import unsubscribedIcon from "../assets/icons8-unsubscribed.gif";
@@ -17,10 +18,7 @@ const Unsubscribe = () => {
       return;
     }
 
-    // Fetch URL from environment variable
-    const backendURL = process.env.REACT_APP_BACKEND_URL;
-
-    fetch(`${backendURL}/unsubscribe`, {
+    fetch(`${API_BASE_URL}/unsubscribe`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

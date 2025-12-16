@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import API_BASE_URL from "../config/api";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import logo from "../assets/primary/lgs_logo_white.png";
@@ -18,9 +19,7 @@ function Footer() {
     setMessage("");
 
     try {
-      const backendURL = process.env.REACT_APP_BACKEND_URL;
-
-      const res = await fetch(`${backendURL}/subscribe`, {
+      const res = await fetch(`${API_BASE_URL}/subscribe`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

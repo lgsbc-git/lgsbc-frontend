@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../styles/ConsultationForm.css";
-
+import API_BASE_URL from "../../config/api";
 import emailIcon from "../../assets/home/Email.png";
 import locationIcon from "../../assets/home/Location.png";
 
@@ -40,9 +40,7 @@ function ConsultationForm() {
     setIsLoading(true);
 
     try {
-      const backendURL = process.env.REACT_APP_BACKEND_URL;
-
-      const res = await fetch(`${backendURL}/send`, {
+      const res = await fetch(`${API_BASE_URL}/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
