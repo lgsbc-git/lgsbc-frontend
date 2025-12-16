@@ -1,35 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/</loc>
+    <loc>https://lgsbc.com.au/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/services</loc>
+    <loc>https://lgsbc.com.au/services</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://lgsbc.com.au/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/news</loc>
+    <loc>https://lgsbc.com.au/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/stories</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/about</loc>
+    <loc>https://lgsbc.com.au/products</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://yourdomain.com/blogs</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://yourdomain.com/blank</loc>
+    <loc>https://lgsbc.com.au/blank</loc>
     <priority>0.4</priority>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 .scroll-to-top {
   position: fixed;
   bottom: 30px;
-  left: 12px; /* desktop left placement */
+  left: 21px; /* desktop left placement */
   background: linear-gradient(135deg, #2c96cf, #07d6e1d1);
   border: none;
   width: 46px;
